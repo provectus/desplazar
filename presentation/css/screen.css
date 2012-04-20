@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+	}
+
+@font-face {
+	font-family: 'DINPro-Regular';
+	src: url('../fonts/DINPro-Regular.eot');
+	src: local('☺'),
+		 url('../fonts/DINPro-Regular.woff') format('woff'),
+		 url('../fonts/DINPro-Regular.ttf') format('truetype'),
+		 url('../fonts/DINPro-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	}
+
+@font-face {
+	font-family: 'DINPro-Bold';
+	src: url('../fonts/DINPro-Bold.eot');
+	src: local('☺'),
+		 url('../fonts/DINPro-Bold.woff') format('woff'),
+		 url('../fonts/DINPro-Bold.ttf') format('truetype'),
+		 url('../fonts/DINPro-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	}
+
+#content {
+	width: 1024px;
+	height: 768px;
+	overflow: hidden;
+	margin: 0 auto;
+	}
+
+#canvas {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 768px !important;
+    background: #eee;
+	}
+
+#canvas ul {
+    position: absolute;
+    top: 0;
+    -webkit-transition: all .2s ease-out;
+       -moz-transition: all .2s ease-out;
+    	 -o-transition: all .2s ease-out;
+    		transition: all .2s ease-out;
+    width: 2000px;
+    height: 768px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	}
+
+#canvas ul li {
+    float: left;
+    width: 1024px !important;
+    height: 768px !important;
+	position: relative;
+    overflow: hidden;
+	}
+
+.title {
+	position: absolute;
+	font-family: DINPro-Regular;
+	font-size: 48px;
+	top: 65px;
+	left: 72px;
+	font-weight: normal;
+	}
+
+.sub-title {
+	position: absolute;
+	font-family: DINPro-Regular;
+	font-size: 26px;
+	left: 72px;
+	top: 127px;
+	}
+
+#main, #enterprises {
+	position: relative;
+	height: 768px;
+	}
+#main {
+	background: url('../assets/pages/main/main.png') no-repeat;
+	}
+	#main div {
+		cursor: pointer;
+		position: absolute;
+		right: 86px;
+		top: 193px;
+		}
+#to-enterprises {
+	width: 312px;
+	height: 102px;
+	}
+#enterprises {
+
+}
+/**** PAGES ****/
+
+/** AK BARS AERO **/
+/** 01 **/
+
+.ak-bars-aero .slide-01 {
+	color: #000;
+	background: url('../assets/pages/ak-bars-aero/01.jpg') no-repeat;
+	}
+	.ak-bars-aero .slide-01 .address {
+		font-family: DINPro-Bold;
+		top: 588px;
+		left: 72px;
+		position: absolute;
+		font-size: 14px;
+		}
+		.ak-bars-aero .slide-01 .address p {
+			line-height: 16px;
+			}
+	.ak-bars-aero .slide-01 .tel {
+		font-family: DINPro-Regular;
+		left: 72px;
+		top: 654px;
+		position: absolute;
+		font-size: 14px;
+		}
+		.ak-bars-aero .slide-01 .tel .site {
+			top: 33px;
+			position: absolute;
+			}
+
+/** 02 **/
+.ak-bars-aero .slide-02 {
+	background: url('../assets/pages/ak-bars-aero/02.jpg') no-repeat;
+	color: #fff;
+	}
+	.ak-bars-aero .slide-02 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;
+		}
+	.ak-bars-aero .slide-02 .m-header {
+		font-size: 21px;
+		font-family: DINPro-Bold;
+		position: absolute;
+		left: 74px;
+		}
+		.ak-bars-aero .slide-02 .m-header-01 {
+			top: 233px;
+			}
+		.ak-bars-aero .slide-02 .m-header-02 {
+			top: 425px;
+			}
+	.ak-bars-aero .slide-02 .text {
+		font-family: DINPro-Regular;
+		font-size: 16px;
+		left: 74px;
+		position: absolute;
+		}
+		.ak-bars-aero .slide-02 .text-01 {
+			top: 275px;
+			}
+		.ak-bars-aero .slide-02 .text-02 {
+			top: 332px;
+			}
+	.ak-bars-aero .slide-02 .list-item {
+		font-family: DINPro-Regular;
+		font-size: 16px;
+		left: 74px;
+		position: absolute;
+		padding-left: 33px;
+		background: url('../assets/controls/bullet.png') no-repeat 0 6px;
+		}
+		.ak-bars-aero .slide-02 .list-item-01 {
+			top: 467px;
+			}
+		.ak-bars-aero .slide-02 .list-item-02 {
+			top: 525px;
+			}
+		.ak-bars-aero .slide-02 .list-item-03 {
+			top: 557px;
+			}
+
+/** 03 **/
+.ak-bars-aero .slide-03 {
+	background: url('../assets/pages/ak-bars-aero/03.jpg') no-repeat;
+	color: #fff;
+	}
