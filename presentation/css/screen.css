@@ -79,6 +79,83 @@
 	top: 127px;
 	}
 
+.gallery-ico {
+	width: 83px;
+	height: 83px;
+	background: url('../assets/controls/gallery.png') no-repeat;
+	position: absolute;
+	cursor: pointer;
+}
+
+.gallery-item {
+	width: 284px;
+	height: 213px;
+	background: url('../assets/controls/gallery-item.png') no-repeat;
+	position: absolute;
+	}
+	.gallery-item img {
+		position: absolute;
+		left: 14px;
+		top: 14px;
+		}
+
+.list-item {
+	font-family: DINPro-Regular;
+	font-size: 16px;
+	left: 74px;
+	position: absolute;
+	padding-left: 33px;
+	background: url('../assets/controls/bullet.png') no-repeat 0 6px;
+	}
+
+.m-header {
+	font-size: 21px;
+	font-family: DINPro-Bold;
+	position: absolute;
+	left: 74px;
+	}
+
+.text {
+	font-family: DINPro-Regular;
+	font-size: 16px;
+	left: 74px;
+	position: absolute;
+	}
+
+.slide-min {
+	position: absolute;
+	width: 82px;
+	height: 82px;
+	left: 72px;
+	background: url('../assets/controls/slide_min.png') no-repeat;
+	}
+
+.photo-min {
+	position: absolute;
+	width: 82px;
+	height: 82px;
+	left: 72px;
+	background: url('../assets/controls/photo_min.png') no-repeat;
+	}
+
+.hand-min {
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	width: 95px;
+	height: 76px;
+	background: url('../assets/controls/hand_min.png') no-repeat;
+	}
+
+.more-min {
+	width: 82px;
+	height: 82px;
+	position: absolute;
+	background: url('../assets/controls/more_min.png') no-repeat;
+	cursor: pointer;
+	left: 72px;
+	}
+
 #main, #enterprises {
 	position: relative;
 	height: 768px;
@@ -100,6 +177,168 @@
 
 }
 /**** PAGES ****/
+
+/** ALABUGA **/
+/** 01 **/
+.alabuga .slide-01 {
+	color: #fff;
+	background: url('../assets/pages/alabuga/01.png') no-repeat;
+	}
+	.alabuga .slide-01 .logo {
+		width: 225px;
+		height: 134px;
+		background: url('../assets/pages/ak-bars-holding/logo.png') no-repeat;
+		top: 465px;
+		position: absolute;
+		left: 75px;
+		}
+	.alabuga .slide-01 .address {
+		top: 554px;
+		font-size: 16px;
+		}
+	.alabuga .slide-01 .contacts {
+		top: 640px;
+		font-size: 16px;
+		}
+	.alabuga .slide-01 .logo {
+		width: 352px;
+		height: 85px;
+		background: url('../assets/pages/alabuga/logo.png') no-repeat;
+		left: 62px;
+		top: 445px;
+		}
+
+/** 02 **/
+.alabuga .slide-02 {
+	color: #fff;
+	background: url('../assets/pages/alabuga/02.png') no-repeat;
+	}
+	.alabuga .slide-02 .text-01 {
+		top: 180px;
+		}
+	.alabuga .slide-02 .text-02 {
+		top: 305px;
+		}
+	.alabuga .slide-02 .m-header-01 {
+		top: 268px;
+		}
+	.alabuga .slide-02 .more-min {
+		top: 530px;
+		}
+
+/** 03 **/
+.alabuga .slide-03 {
+	color: #fff;
+	background: url('../assets/pages/alabuga/03.png') no-repeat;
+	}
+	.alabuga .slide-03 .text-01 {
+		top: 180px;
+		}
+	.alabuga .slide-03 .more-min {
+		top: 330px;
+		}
+/** 04 **/
+.alabuga .slide-04 {
+	color: #fff;
+	background: url('../assets/pages/alabuga/04.png') no-repeat;
+	}
+	.alabuga .slide-04 .slide-min {
+		top: 290px;
+		}
+	.alabuga .slide-04 .photo-min {
+		top: 550px;
+		}
+
+/** BKK **/
+/** 01 **/
+.bkk .slide-01 {
+	color: #000;
+	background: url('../assets/pages/bkk/01.png') no-repeat;
+	}
+	.bkk .slide-01 .title {
+		color: #000;
+		line-height: 50px;
+		}
+
+/** AK BARS HOLDING **/
+/** 01 **/
+.ak-bars-holding .slide-01 {
+	color: #000;
+	background: url('../assets/pages/ak-bars-holding/01.png') no-repeat;
+	}
+	.ak-bars-holding .slide-01 .sub-title {
+		top: 195px;
+		}
+	.ak-bars-holding .slide-01 .logo {
+		width: 225px;
+		height: 134px;
+		background: url('../assets/pages/ak-bars-holding/logo.png') no-repeat;
+		top: 465px;
+		position: absolute;
+		left: 75px;
+		}
+	.ak-bars-holding .slide-01 .address {
+		top: 610px;
+		font-size: 16px;
+		}
+	.ak-bars-holding .slide-01 .contacts {
+		top: 640px;
+		font-size: 16px;
+		}
+/** 02 **/
+.ak-bars-holding .slide-02 {
+	color: #fff;
+	background: url('../assets/pages/ak-bars-holding/02.png') no-repeat;
+	}
+	.ak-bars-holding .slide-02 .list-item-01 {
+		top: 180px;
+		}
+	.ak-bars-holding .slide-02 .list-item-02 {
+		top: 236px;
+		}
+	.ak-bars-holding .slide-02 .list-item-03 {
+		top: 270px;
+		}
+	.ak-bars-holding .slide-02 .m-header-01 {
+		top: 314px;
+		}
+	.ak-bars-holding .slide-02 .m-header-02 {
+		top: 420px;
+		}
+	.ak-bars-holding .text-01 {
+		top: 345px;
+		}
+	.ak-bars-holding .text-02 {
+		top: 451px;
+		}
+/** 03 **/
+.ak-bars-holding .slide-03 {
+	color: #fff;
+	background: url('../assets/pages/ak-bars-holding/03.png') no-repeat;
+	}
+	.ak-bars-holding .slide-03 .list-item-01 {
+		top: 200px;
+		}
+	.ak-bars-holding .slide-03 .list-item-02 {
+		top: 240px;
+		}
+	.ak-bars-holding .slide-03 .list-item-03 {
+		top: 300px;
+		}
+	.ak-bars-holding .slide-03 .list-item-04 {
+		top: 360px;
+		}
+	.ak-bars-holding .slide-03 .list-item-05 {
+		top: 400px;
+		}
+	.ak-bars-holding .slide-min {
+		left: 72px;
+		top: 600px;
+		}
+	.ak-bars-holding .presentation {
+		top: 625px;
+		left: 178px;
+		}
 
 /** AK BARS AERO **/
 /** 01 **/
@@ -144,38 +383,18 @@
 		height: 31px;
 		background: url('../assets/controls/home.png') no-repeat;
 		}
-	.ak-bars-aero .slide-02 .m-header {
-		font-size: 21px;
-		font-family: DINPro-Bold;
-		position: absolute;
-		left: 74px;
-		}
 		.ak-bars-aero .slide-02 .m-header-01 {
 			top: 233px;
 			}
 		.ak-bars-aero .slide-02 .m-header-02 {
 			top: 425px;
 			}
-	.ak-bars-aero .slide-02 .text {
-		font-family: DINPro-Regular;
-		font-size: 16px;
-		left: 74px;
-		position: absolute;
-		}
 		.ak-bars-aero .slide-02 .text-01 {
 			top: 275px;
 			}
 		.ak-bars-aero .slide-02 .text-02 {
 			top: 332px;
 			}
-	.ak-bars-aero .slide-02 .list-item {
-		font-family: DINPro-Regular;
-		font-size: 16px;
-		left: 74px;
-		position: absolute;
-		padding-left: 33px;
-		background: url('../assets/controls/bullet.png') no-repeat 0 6px;
-		}
 		.ak-bars-aero .slide-02 .list-item-01 {
 			top: 467px;
 			}
@@ -191,3 +410,15 @@
 	background: url('../assets/pages/ak-bars-aero/03.jpg') no-repeat;
 	color: #fff;
 	}
+	.ak-bars-aero .slide-03 .gallery-ico {
+		top: 284px;
+		left: 122px;
+		}
+		.ak-bars-aero .slide-03 .gallery-item-01 {
+			left: 250px;
+			top: 215px;
+			}
+		.ak-bars-aero .slide-03 .gallery-item-02 {
+			left: 583px;
+			top: 215px;
+			}

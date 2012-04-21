@@ -4,6 +4,7 @@
 		<meta charset="utf-8" />
 		<title>Republic of Tatarstan</title>
 		<link type="text/css" href="css/screen.css" rel="stylesheet" />
+		<link type="text/css" href="css/jquery.lightbox-0.5.css" rel="stylesheet" />
 	</head>
 	<body>
 		<div id="content">
@@ -47,8 +48,15 @@
 						<h1 class="title">Air Transportation</h1>
 						<h2 class="sub-title">PRESENTATION</h2>
 
-
-
+						<div class="gallery-ico"></div>
+						<div id="publicy-held-company">
+							<div class="gallery-item gallery-item-01">
+								<a href="assets/pages/ak-bars-aero/gallery/01.jpg" rel="lightbox"><img src="assets/pages/ak-bars-aero/gallery/thumb-01.jpg" alt=""></a>
+							</div>
+							<div class="gallery-item gallery-item-02">
+								<a href="assets/pages/ak-bars-aero/gallery/02.jpg" rel="lightbox"><img src="assets/pages/ak-bars-aero/gallery/thumb-02.jpg" alt=""></a>
+							</div>
+						</div>
 					</li>
 
 				</ul>
@@ -58,11 +66,16 @@
 		<script src="js/jquery.min.js" type="text/javascript"></script>
 		<script src="js/hammer.js" type="text/javascript"></script>
 		<script src="js/jquery.hammer.js" type="text/javascript"></script>
+		<script src="js/jquery.lightbox-0.5.pack.js" type="text/javascript"></script>
 		<script src="js/application.js" type="text/javascript"></script>
 
 		<script type="text/javascript">
 			$(function() {
 				new Desplazar('#canvas');
+				$('#publicy-held-company a').lightBox({
+					imageBtnPrev: 'assets/gallery/prev_min.png',
+					imageBtnNext: 'assets/gallery/next_min.png'
+				});
 			});
 		</script>
 	</body>
