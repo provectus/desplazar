@@ -51,11 +51,11 @@ Slideshow.prototype = {
 
 var Desplazar = function(container) {
 
-    this.width  = $(window).width();
-    this.height = $(window).height();
-
     this.container = $(container);
     this.slider = $(this.container).find('ul').first();
+
+    this.width  = this.container.width();
+    this.height = this.container.height();
 
     this.hammer = $(this.slider).hammer();
     this.slideshow = new Slideshow(this.slider);
@@ -90,7 +90,7 @@ Desplazar.prototype = {
                 $(obj).width(options.width).height(options.height);
             };
 
-        setDimensions(this.container);
+        //setDimensions(this.container);
         setDimensions(this.slider, { width: this.width * this.slideshow.totalSlides});
         $(this.slider).children().each(function(idx, item) {
             setDimensions(item);
