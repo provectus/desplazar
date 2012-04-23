@@ -1,9 +1,11 @@
 
-var Slideshow = function(container) {
+var Slideshow = function(container, options) {
     this.container = $(container);
+    this.options = options;
 
     this.slides = this.container.children();
     this.width = this.container.parent().width();
+    this.height = this.container.parent().height();
 
     this.current = 0;
     this.totalSlides = this.slides.length;
@@ -13,6 +15,7 @@ Slideshow.prototype = {
 
     reset: function() {
         this.width = this.container.parent().width();
+        this.height = this.container.parent().height();
     },
 
     slideTo: function(index) {
@@ -26,7 +29,12 @@ Slideshow.prototype = {
             return false;
         }
 
-        this.container.css({ left: 0 - (this.width * index) });
+        switch(this.options.direction) {
+            case Desplazar.HORIZONTAL: css = { left: 0 - (this.width * index) }; break;
+            case Desplazar.VERTICAL: css = { top: 0 - (this.height * index) }; break;
+        }
+
+        this.container.css(css);
         this.current = index;
 
         return true;
@@ -49,7 +57,13 @@ Slideshow.prototype = {
     }
 };
 
-var Desplazar = function(container) {
+var Desplazar = function(container, options) {
+
+    var defaults = {
+        direction: Desplazar.HORIZONTAL
+    };
+
+    this.options = $.extend({}, defaults, options);
 
     this.container = $(container);
     this.slider = $(this.container).find('ul').first();
@@ -58,64 +72,44 @@ var Desplazar = function(container) {
     this.height = this.container.height();
 
     this.hammer = $(this.slider).hammer();
-    this.slideshow = new Slideshow(this.slider);
+    this.slideshow = new Slideshow(this.slider, this.options);
 
-    this.setup();
     this.bind();
-
-    this.onresize();
 };
 
+Desplazar.VERTICAL = 0;
+Desplazar.HORIZONTAL = 1;
+
 Desplazar.prototype = {
-
-    onresize: function() {
-        var self = this;
-        $(window).resize(function() {
-            self.width  = $(window).width();
-            self.height = $(window).height();
-            self.setup();
-            self.slideshow.reset();
-        });
-    },
-
-    setup: function() {
-        var self = this,
-            defaults = {
-                height: this.height,
-                width: this.width
-            },
-
-            setDimensions = function(obj, options) {
-                options = $.extend({}, defaults, options || {});
-                $(obj).width(options.width).height(options.height);
-            };
-
-        //setDimensions(this.container);
-        setDimensions(this.slider, { width: this.width * this.slideshow.totalSlides});
-        $(this.slider).children().each(function(idx, item) {
-            setDimensions(item);
-        });
-    },
 
     bind: function() {
         var self = this;
         this.hammer.bind('drag', function(ev) {
-            var left = 0;
+            var left = 0,
+                top = 0;
 
-            if(ev.direction == 'left') {
-                left = 0 - ev.distance;
-            } else if(ev.direction == 'right') {
-                left = ev.distance;
+            if(self.options.direction == Desplazar.VERTICAL) {
+                if(ev.direction == 'up') {
+                    top = 0 - ev.distance;
+                } else if(ev.direction == 'down') {
+                    top = ev.distance;
+                }
+            } else if (self.options.direction == Desplazar.HORIZONTAL) {
+                if(ev.direction == 'left') {
+                    left = 0 - ev.distance;
+                } else if(ev.direction == 'right') {
+                    left = ev.distance;
+                }
             }
 
-            self.slideshow.getContainer().css({ marginLeft: left });
+            self.slideshow.getContainer().css({ marginLeft: left, marginTop: top });
         }).bind('dragend', function(ev) {
-            self.slideshow.getContainer().css({ marginLeft: 0 });
+            self.slideshow.getContainer().css({ marginLeft: 0, marginTop: 0 });
 
             if(Math.abs(ev.distance) > 100) {
-                if(ev.direction == 'right') {
+                if((self.options.direction == Desplazar.HORIZONTAL && ev.direction == 'right') || (self.options.direction == Desplazar.VERTICAL && ev.direction == 'down')) {
                     self.slideshow.prev();
-                } else if(ev.direction == 'left') {
+                } else if((self.options.direction == Desplazar.HORIZONTAL && ev.direction == 'left') || (self.options.direction == Desplazar.VERTICAL && ev.direction == 'up')) {
                     self.slideshow.next();
                 }
             }
