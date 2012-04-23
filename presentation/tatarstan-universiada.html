@@ -132,7 +132,7 @@ image in the world.</p>
 
 							<a class="home" href="/"></a>
 	                       </li>
-	                        <li class="slide-08">
+	                        <li class="slide-08" style="display:none">
 							<h1 class="title">UNIVERSIADE KAZAN 2013</h1>
 							
 							
@@ -155,9 +155,84 @@ development, joy and happiness. </p>
 
 
 							
-							<a class="more-max" href="/"></a>
-							<a class="home" href="/"></a>
+							<a class="more-max" href="javascript:toggle();"></a>
+							<a class="home" href="javascript:;"></a>
+	                       <div id="more-details" style="display:none;" class="more-text">
+	                       		<div class="subwrapper">
+		                       		<div class="header-top">
+		                       			<h1>UNIVERSIADE KAZAN 2013</h1></h1>
+		                       			<a href="javascript:toggle();" class="closebtn"></a>
+		                       		</div>
+		                       		<div class="text-body" id="iscroll">
+		                       			<p>n July 6 – 17, 2013 the capital of the Republic of Tatarstan, Kazan city, renowned for its hospitality, will 
+become the centre of the key international multi-sport event – the XXVII World Summer Universiade.</p>
+		                       			<p>More than 13500 athletes and official delegation members from 170 countries of the world as well as 
+more than 1500 media representatives are expected to arrive in Kazan. </p>
+		                       			<p>About 100 thousand tourists and fans from Russia and abroad will visit Kazan both to support their 
+countries and get to know a millennial historical heritage of the city, its rich culture and modern 
+infrastructure.</p>
+		                       			<p>Uni – the winged snow leopard kitten has become the mascot of the Universiade 2013. Winged snow 
+leopard is a national symbol of Tatarstan and it appears on the emblem of the Republic.</p>
+		                       			<p>The brand sign of the XXVII World University Games inspired by a tulip – an essential element of a 
+traditional Tatar ornament – is a symbol of spring, youth and development, joy and happiness.</p>
+		                       			<p>The Latin letter “U” is clearly recognized in the brand sign as well as five multi-coloured stars which 
+symbolize the five continents.
+</p>
+		                       			<p>The motto of KazanUniversiade is “U are the world”. As the Universiade original brand sign is 
+represented by the letter “U”, the motto may be interpreted in two ways: “You are the World” 
+and “Universiade is the whole World”. </p>
+		                       			<p>The motto of KazanUniversiade is “U are the world”. As the Universiade original brand sign is 
+represented by the letter “U”, the motto may be interpreted in two ways: “You are the World” 
+and “Universiade is the whole World”. </p>
+		                       			<p>The motto of KazanUniversiade is “U are the world”. As the Universiade original brand sign is 
+represented by the letter “U”, the motto may be interpreted in two ways: “You are the World” 
+and “Universiade is the whole World”. </p>
+		                       			<p>The motto of KazanUniversiade is “U are the world”. As the Universiade original brand sign is 
+represented by the letter “U”, the motto may be interpreted in two ways: “You are the World” 
+and “Universiade is the whole World”. </p>
+		                       			<p>The motto of KazanUniversiade is “U are the world”. As the Universiade original brand sign is 
+represented by the letter “U”, the motto may be interpreted in two ways: “You are the World” 
+and “Universiade is the whole World”. </p>
+		                       			<p>The motto of KazanUniversiade is “U are the world”. As the Universiade original brand sign is 
+represented by the letter “U”, the motto may be interpreted in two ways: “You are the World” 
+and “Universiade is the whole World”. </p>
+		                       			<p>The motto of KazanUniversiade is “U are the world”. As the Universiade original brand sign is 
+represented by the letter “U”, the motto may be interpreted in two ways: “You are the World” 
+and “Universiade is the whole World”. </p>
+		                       			<p>The motto of KazanUniversiade is “U are the world”. As the Universiade original brand sign is 
+represented by the letter “U”, the motto may be interpreted in two ways: “You are the World” 
+and “Universiade is the whole World”. </p>
+		                       			<p>The motto of KazanUniversiade is “U are the world”. As the Universiade original brand sign is 
+represented by the letter “U”, the motto may be interpreted in two ways: “You are the World” 
+and “Universiade is the whole World”. </p>
+		                       			<p>The motto of KazanUniversiade is “U are the world”. As the Universiade original brand sign is 
+represented by the letter “U”, the motto may be interpreted in two ways: “You are the World” 
+and “Universiade is the whole World”. </p>
+		                       		</div>
+	                       		</div>
+	                       	</div>
 	                       </li>
+	                        <li class="slide-09">
+						<h1 class="title">VIDEO PRESENTATIONS</h1>
+						<h2 class="sub-title">UNIVERSIADE KAZAN 2013</h2>
+
+						<div class="video-ico"></div>
+						<div id="publicy-held-company">
+							<div class="gallery-item video gallery-item-01">
+								<a href=""></a>
+							</div>
+							<div class="gallery-item video gallery-item-02">
+								<a href=""></a>
+							</div>
+							<div class="gallery-item video gallery-item-03">
+								<a href=""></a>
+							</div>
+							<div class="gallery-item video gallery-item-04">
+								<a href=""></a>
+							</div>
+						</div>
+						<a class="home" href="/"></a>
+                        </li>
                     	</ul>
                 	</li>
             		
@@ -169,9 +244,27 @@ development, joy and happiness. </p>
 		<script src="js/hammer.js" type="text/javascript"></script>
 		<script src="js/jquery.hammer.js" type="text/javascript"></script>
 		<script src="js/jquery.lightbox-0.5.pack.js" type="text/javascript"></script>
+		<script src="js/iscroll.js" type="text/javascript"></script>
 		<script src="js/application.js" type="text/javascript"></script>
 
 		<script type="text/javascript">
+            var myScroll;
+			function loaded() {
+				myScroll = new iScroll('iscroll');
+			}
+			document.addEventListener('DOMContentLoaded', loaded, false);
+			
+
+			function toggle() {
+				var ele = document.getElementById("more-details");
+				if(ele.style.display == "block") {
+	    			ele.style.display = "none";
+	  			} else {
+					ele.style.display = "block";
+				}
+			}
+
+
             $(function() {
                 new Desplazar($('#canvas'), { direction: Desplazar.VERTICAL })
 
