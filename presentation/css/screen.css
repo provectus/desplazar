@@ -86,11 +86,25 @@
 	left: 72px;
 	top: 127px;
 	}
+.small-title {
+	position: absolute;
+	font-family: DINPro-Regular;
+	font-size: 18px;
+	left: 72px;
+	top: 127px;
+}
 
 .gallery-ico {
 	width: 83px;
 	height: 83px;
 	background: url('../assets/controls/gallery.png') no-repeat;
+	position: absolute;
+	cursor: pointer;
+}
+.video-ico {
+	width: 83px;
+	height: 83px;
+	background: url('../assets/controls/video_min.png') no-repeat;
 	position: absolute;
 	cursor: pointer;
 }
@@ -100,6 +114,10 @@
 	height: 213px;
 	background: url('../assets/controls/gallery-item.png') no-repeat;
 	position: absolute;
+	}
+.gallery-item.video {
+	background: url('../assets/controls/video-item.png') no-repeat;
+	
 	}
 	.gallery-item img {
 		position: absolute;
@@ -429,4 +447,189 @@
 		.ak-bars-aero .slide-03 .gallery-item-02 {
 			left: 583px;
 			top: 215px;
+			}
+/** TATARSTAN universiada **/
+/** 01 **/
+.tatarstan-universiada .slide-01 {
+	background: url('../assets/pages/tatarstan-universiada/01.jpg') no-repeat;
+	color: #fff;
+	}
+	.tatarstan-universiada .slide-01 .m-header-01 {
+			top: 198px;
+		}
+	.tatarstan-universiada .slide-01 .m-header-02 {
+		top: 387px;
+		}
+	.tatarstan-universiada .text-01 {
+		top: 241px;
+		}
+	.tatarstan-universiada .text-02 {
+		top: 294px;
+		}
+	.tatarstan-universiada .slide-01 .list-item-01 {
+		top: 433px;
+		}
+	.tatarstan-universiada .slide-01 .list-item-02 {
+		top: 492px;
+		}
+	.tatarstan-universiada .slide-01 .list-item-03 {
+		top: 524px;
+		}
+/** 02 **/
+.tatarstan-universiada .slide-02 {
+	background: url('../assets/pages/tatarstan-universiada/02.jpg') no-repeat;
+	color: #fff;
+	}
+	.tatarstan-universiada .slide-02 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;
+		}
+	.tatarstan-universiada .slide-02 .m-header-01 {
+		top: 198px;
+		}
+	.tatarstan-universiada .slide-02 .m-header-02 {
+		top: 387px;
+		}
+	
+	.tatarstan-universiada .slide-02 .list-item-01 {
+		top: 433px;
+		}
+	.tatarstan-universiada .slide-02 .list-item-02 {
+		top: 492px;
+		}
+	.tatarstan-universiada .slide-02 .list-item-03 {
+		top: 524px;
+		}
+/** 03 **/
+.tatarstan-universiada .slide-03 {
+	background: url('../assets/pages/tatarstan-universiada/03.jpg') no-repeat;
+	color: #fff;
+	}
+	.tatarstan-universiada .slide-03 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;
+		}
+	.tatarstan-universiada .slide-03 .m-header-01 {
+		top: 198px;
+		}
+	.tatarstan-universiada .slide-03 .m-header-02 {
+		top: 387px;
+		}
+	
+	.tatarstan-universiada .slide-03 .list-item-01 {
+		top: 433px;
+		}
+	.tatarstan-universiada .slide-03 .list-item-02 {
+		top: 492px;
+		}
+	.tatarstan-universiada .slide-03 .list-item-03 {
+		top: 524px;
+		}
+
+/** 04 **/
+.tatarstan-universiada .slide-04 {
+	background: url('../assets/pages/tatarstan-universiada/04.jpg') no-repeat;
+	color: #fff;
+	}
+	.tatarstan-universiada .slide-04 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;
+		}
+	.tatarstan-universiada .slide-04 .m-header-01 {
+		top: 198px;
+		}
+	.tatarstan-universiada .slide-04 .m-header-02 {
+		top: 387px;
+		}
+	
+	.tatarstan-universiada .slide-04 .list-item-01 {
+		top: 433px;
+		}
+	.tatarstan-universiada .slide-04 .list-item-02 {
+		top: 492px;
+		}
+	.tatarstan-universiada .slide-04 .list-item-03 {
+		top: 524px;
+		}
+
+
+/** 05 **/
+.tatarstan-universiada .slide-05 {
+	background: url('../assets/pages/tatarstan-universiada/05.jpg') no-repeat;
+	color: #fff;
+	}
+	.tatarstan-universiada .slide-05 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;
+		}
+	.tatarstan-universiada .slide-05 .m-header-01 {
+		top: 198px;
+		}
+	.tatarstan-universiada .slide-05 .m-header-02 {
+		top: 387px;
+		}
+	
+	.tatarstan-universiada .slide-05 .list-item-01 {
+		top: 433px;
+		}
+	.tatarstan-universiada .slide-05 .list-item-02 {
+		top: 492px;
+		}
+	.tatarstan-universiada .slide-05 .list-item-03 {
+		top: 524px;
+		}
+
+/** 06 **/
+.tatarstan-universiada .slide-06 {
+	background: url('../assets/pages/tatarstan-universiada/06.jpg') no-repeat;
+	color: #fff;
+	}
+	.tatarstan-universiada .slide-06 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;
+		}
+	.tatarstan-universiada .slide-06 .video-ico {
+		top: 215px;
+		left: 122px;
+		}
+		.tatarstan-universiada .slide-06 .gallery-item-01 {
+			left: 250px;
+			top: 180px;
+			}
+		.tatarstan-universiada .slide-06 .gallery-item-02 {
+			left: 583px;
+			top: 180px;
+			}
+		.tatarstan-universiada .slide-06 .gallery-item-03 {
+			left: 250px;
+			top: 433px;
+			}
+		.tatarstan-universiada .slide-06 .gallery-item-04 {
+			left: 583px;
+			top: 433px;
 			}
