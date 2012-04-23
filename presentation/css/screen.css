@@ -119,6 +119,7 @@
 	background: url('../assets/controls/video-item.png') no-repeat;
 	
 	}
+
 	.gallery-item img {
 		position: absolute;
 		left: 14px;
@@ -180,6 +181,15 @@
 	background: url('../assets/controls/more_min.png') no-repeat;
 	cursor: pointer;
 	left: 72px;
+	}
+.more-max {
+	width: 82px;
+	height: 82px;
+	position: absolute;
+	background: url('../assets/controls/more-max.png') no-repeat;
+	cursor: pointer;
+	left: 268px;
+	top:564px;
 	}
 
 #main, #enterprises {
@@ -633,3 +643,88 @@
 			left: 583px;
 			top: 433px;
 			}
+/** 07 **/
+.tatarstan-universiada .slide-07 {
+	background: url('../assets/pages/tatarstan-universiada/07.jpg') no-repeat;
+	color: #fff;
+	}
+	.tatarstan-universiada .slide-07 .img-item {
+		position:absolute;
+		top:192px;
+		right:71px;
+		width:622px;
+		height:300px;
+	}
+.tatarstan-universiada .slide-07 .title {
+	color:#2b2a2a;
+	top:70px;
+	left:330px;
+	}
+	.tatarstan-universiada .slide-07 .text {
+		left:330px;
+		width:565px;
+		font-size:18px;
+	}
+.tatarstan-universiada .slide-07 .text-01 {
+	top: 135px;
+	color:#2b2a2a;
+	}
+.tatarstan-universiada .slide-07 .text-02 {
+	top: 517px;
+	}
+.tatarstan-universiada .slide-07 .text-03 {
+	top: 581px;
+	}
+.tatarstan-universiada .slide-07 .text-04 {
+	top: 623px;
+	}
+.tatarstan-universiada .slide-07 .text-05 {
+	top: 687px;
+	}
+.tatarstan-universiada .slide-07 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;
+		}
+/** 08 **/
+.tatarstan-universiada .slide-08 {
+	background: url('../assets/pages/tatarstan-universiada/08.jpg') no-repeat;
+	color: #fff;
+	}
+.tatarstan-universiada .slide-08 .title {
+	top:70px;
+	left:282px;
+	}
+.tatarstan-universiada .slide-08 .text {
+		left:282px;
+		width:671px;
+		font-size:18px;
+	}
+.tatarstan-universiada .slide-08 .text-01 {
+	top: 135px;
+	}
+.tatarstan-universiada .slide-08 .text-02 {
+	top: 218px;
+	}
+.tatarstan-universiada .slide-08 .text-03 {
+	top: 306px;
+	}
+.tatarstan-universiada .slide-08 .text-04 {
+	top: 394px;
+	}
+.tatarstan-universiada .slide-08 .text-05 {
+	top: 479px;
+	}
+.tatarstan-universiada .slide-08 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;
+		}
