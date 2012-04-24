@@ -41,6 +41,7 @@
 
 #canvas ul, #canvas ul li ul {
     position: absolute;
+    z-index: 10;
     -webkit-transition: all .2s ease-out;
        -moz-transition: all .2s ease-out;
     	 -o-transition: all .2s ease-out;
@@ -158,7 +159,11 @@
 	left: 72px;
 	top: 127px;
 }
-
+.within-list span{
+	display: list-item;
+	list-style-type:disc;
+	list-style-position:inside;
+}
 .gallery-ico {
 	width: 83px;
 	height: 83px;
@@ -184,7 +189,17 @@
 	background: url('../assets/controls/video-item.png') no-repeat;
 	
 	}
+.gallery-item.sm {
+	background: url('../assets/controls/gv-item.png') no-repeat;
+	width: 212px;
+	height: 159px;
+	position: static;
+	float:left;
 
+	}
+.last {
+	margin-bottom: 30px;
+}
 	.gallery-item img {
 		position: absolute;
 		left: 14px;
@@ -220,7 +235,18 @@
 	left: 74px;
 	position: absolute;
 	}
+.galleryz {
 
+padding-top: 200px;
+
+width:950px;
+height:768px;
+
+}
+.gall-wrap {
+	padding-left: 182px;
+	width:800px;
+}
 .text-block {
 	position: absolute;
 	}
@@ -274,8 +300,13 @@
 	height:768px;
 	width:1024px;
 	background-color: #000;
+<<<<<<< HEAD
 	}
 
+=======
+    z-index: 1000;
+}
+>>>>>>> f3fd128f02aa8b19b00b4e69ade686081e0a5259
 .closebtn {
 	position: absolute;
 	height:52px;
@@ -300,7 +331,19 @@
 	margin:43px 40px;
 	background:#fff;
 	height:680px;
+<<<<<<< HEAD
 	}
+=======
+    overflow: auto;
+}
+
+.content-scroller {
+    -webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+>>>>>>> f3fd128f02aa8b19b00b4e69ade686081e0a5259
 
 .text-body {
 	padding-left: 45px;
@@ -733,7 +776,7 @@ a.home {
 /** TATARSTAN universiada **/
 /** 01 **/
 .tatarstan-universiada .slide-01 {
-	background: url('../assets/pages/tatarstan-universiada/01.jpg') no-repeat;
+	background: url('../assets/pages/tatarstan-universiada/01.png') no-repeat;
 	color: #fff;
 	}
 	.tatarstan-universiada .slide-01 .m-header-01 {
@@ -759,7 +802,7 @@ a.home {
 		}
 /** 02 **/
 .tatarstan-universiada .slide-02 {
-	background: url('../assets/pages/tatarstan-universiada/02.jpg') no-repeat;
+	background: url('../assets/pages/tatarstan-universiada/02.png') no-repeat;
 	color: #fff;
 	}
 	.tatarstan-universiada .slide-02 .home {
@@ -789,7 +832,7 @@ a.home {
 		}
 /** 03 **/
 .tatarstan-universiada .slide-03 {
-	background: url('../assets/pages/tatarstan-universiada/03.jpg') no-repeat;
+	background: url('../assets/pages/tatarstan-universiada/03.png') no-repeat;
 	color: #fff;
 	}
 	.tatarstan-universiada .slide-03 .home {
@@ -820,7 +863,7 @@ a.home {
 
 /** 04 **/
 .tatarstan-universiada .slide-04 {
-	background: url('../assets/pages/tatarstan-universiada/04.jpg') no-repeat;
+	background: url('../assets/pages/tatarstan-universiada/04.png') no-repeat;
 	color: #fff;
 	}
 	.tatarstan-universiada .slide-04 .home {
@@ -852,7 +895,7 @@ a.home {
 
 /** 05 **/
 .tatarstan-universiada .slide-05 {
-	background: url('../assets/pages/tatarstan-universiada/05.jpg') no-repeat;
+	background: url('../assets/pages/tatarstan-universiada/05.png') no-repeat;
 	color: #fff;
 	}
 	.tatarstan-universiada .slide-05 .home {
@@ -883,7 +926,7 @@ a.home {
 
 /** 06 **/
 .tatarstan-universiada .slide-06 {
-	background: url('../assets/pages/tatarstan-universiada/06.jpg') no-repeat;
+	background: url('../assets/pages/tatarstan-universiada/06.png') no-repeat;
 	color: #fff;
 	}
 	.tatarstan-universiada .slide-06 .home {
@@ -917,7 +960,7 @@ a.home {
 			}
 /** 07 **/
 .tatarstan-universiada .slide-07 {
-	background: url('../assets/pages/tatarstan-universiada/07.jpg') no-repeat;
+	background: url('../assets/pages/tatarstan-universiada/07.png') no-repeat;
 	color: #fff;
 	}
 	.tatarstan-universiada .slide-07 .img-item {
@@ -964,7 +1007,7 @@ a.home {
 		}
 /** 08 **/
 .tatarstan-universiada .slide-08 {
-	background: url('../assets/pages/tatarstan-universiada/08.jpg') no-repeat;
+	background: url('../assets/pages/tatarstan-universiada/08.png') no-repeat;
 	color: #fff;
 	}
 .tatarstan-universiada .slide-08 .title {
@@ -1002,7 +1045,7 @@ a.home {
 		}
 /** 09 **/
 .tatarstan-universiada .slide-09 {
-	background: url('../assets/pages/tatarstan-universiada/09.jpg') no-repeat;
+	background: url('../assets/pages/tatarstan-universiada/09.png') no-repeat;
 	color: #fff;
 	}
 .tatarstan-universiada .slide-09 .title {
@@ -1040,3 +1083,93 @@ a.home {
 			right: 32px;
 			top: 433px;
 			}
+/** KAZ **/
+/** 01 **/
+.kazan-helicopters .more-max {
+left:74px;
+top:574px;
+}
+.kazan-helicopters .slide-0 {
+	color: #fff;
+	background: url('../assets/pages/kazan-helicopters/01.jpg') no-repeat;
+	}
+	.kazan-helicopters .slide-0 .address {
+		font-family: DINPro-Bold;
+		top: 588px;
+		left: 72px;
+		position: absolute;
+		font-size: 14px;
+		}
+		.ak-bars-aero .slide-0 .address p {
+			line-height: 16px;
+			}
+	.kazan-helicopters .slide-0 .tel {
+		font-family: DINPro-Regular;
+		left: 72px;
+		top: 654px;
+		position: absolute;
+		font-size: 14px;
+		}
+		.kazan-helicopters .slide-0 .tel .site {
+			top: 33px;
+			position: absolute;
+			}
+
+/** 02 **/
+.kazan-helicopters .slide-01	 {
+	background: url('../assets/pages/kazan-helicopters/02.jpg') no-repeat;
+	color: #fff;
+	}
+
+.kazan-helicopters .slide-01 .text {
+		width:671px;
+		font-size:18px;
+	}
+.kazan-helicopters .slide-01 .text-01 {
+	top: 176px;
+	}
+.kazan-helicopters .slide-01 .text-02 {
+	top: 234px;
+	}
+.kazan-helicopters .slide-01 .text-03 {
+	top: 290px;
+	}
+.kazan-helicopters .slide-01 .text-04 {
+	top: 390px;
+	}
+.kazan-helicopters .slide-01 .text-05 {
+	top: 470px;
+	}
+.kazan-helicopters .slide-01 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;
+		}
+/** 03 **/
+.kazan-helicopters .slide-02 {
+	background: url('../assets/pages/kazan-helicopters/03.jpg') no-repeat;
+	color: #fff;
+	overflow-y:auto !important;
+	}
+	.kazan-helicopters .slide-02 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;
+		}
+	.kazan-helicopters .slide-02 .video-ico {
+		top: 584px;
+		left: 72px;
+		}
+	.kazan-helicopters .slide-02 .gallery-ico {
+		top: 242px;
+		left: 72px;
+		}
+	
