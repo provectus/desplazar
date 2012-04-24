@@ -168,7 +168,7 @@
 	left: 74px;
 	position: absolute;
 	padding-left: 33px;
-	background: url('../assets/controls/bullet.png') no-repeat 0 6px;
+	background: url('../assets/controls/bullet.png') no-repeat 0 7px;
 	}
 
 .m-header {
@@ -182,6 +182,17 @@
 	font-family: DINPro-Regular;
 	font-size: 16px;
 	left: 74px;
+	position: absolute;
+	}
+
+.big-label {
+	font-family: DINPro-Bold;
+	font-size: 29px;
+	left: 74px;
+	position: absolute;
+	}
+
+.text-block {
 	position: absolute;
 	}
 
@@ -234,7 +245,6 @@
 	width:1024px;
 	background-color: #000;
     z-index: 1000;
-
 }
 .closebtn {
 	position: absolute;
@@ -294,11 +304,113 @@
 #to-enterprises {
 	width: 312px;
 	height: 102px;
+	position: absolute;
+	top: 193px;
+	right: 86px;
 	}
 #enterprises {
 
 }
 /**** PAGES ****/
+
+
+
+/** Alnas **/
+/** 01 **/
+.alnas .slide-01 {
+	color: #fff;
+	background: url('../assets/pages/alnas/01.png') no-repeat;
+	}
+	.alnas .slide-01 .address {
+		top: 580px;
+		font-size: 16px;
+		color: #fff;
+		}
+	.alnas .slide-01 .contacts {
+		top: 640px;
+		font-size: 16px;
+		color: #fff;
+		}
+	.alnas .slide-01 .logo {
+		width: 283px;
+		height: 54px;
+		background: url('../assets/pages/alnas/logo.png') no-repeat;
+		left: 75px;
+		top: 505px;
+		position: absolute;
+		}
+
+/** 02 **/
+.alnas .slide-02 {
+	color: #fff;
+	background: url('../assets/pages/alnas/02.png') no-repeat;
+	}
+	.alnas .slide-02 .text-01 {
+		top: 220px;
+		}
+	.alnas .slide-02 .text-02 {
+		top: 500px;
+		}
+	.alnas .slide-02 .big-label {
+		top: 305px;
+		}
+	.alnas .slide-02 .text-block-01 {
+		top: 390px;
+		width: 315px;
+		height: 85px;
+		left: 10px;
+		}
+		.alnas .slide-02 .text-block-01 .list-item-02 {
+			top: 22px;
+			}
+		.alnas .slide-02 .text-block-01 .list-item-03 {
+			top: 44px;
+			}
+		.alnas .slide-02 .text-block-01 .list-item-04 {
+			top: 64px;
+			}
+	.alnas .slide-02 .text-block-02 {
+		left: 350px;
+		top: 390px;
+		width: 390px;
+		height: 130px;
+		}
+		.alnas .slide-02 .text-block-02 .list-item-02 {
+			top: 22px;
+			}
+		.alnas .slide-02 .text-block-02 .m-header-01 {
+			top: -35px;
+			left: 60px;
+			}
+	.alnas .slide-02 .text-block-03 {
+		left: 600px;
+		top: 355px;
+		width: 390px;
+		height: 130px;
+		}
+		.alnas .slide-02 .text-block-03 .text-01 {
+			top: 35px;
+			}
+
+/** 03 **/
+.alnas .slide-03 {
+	color: #fff;
+	background: url('../assets/pages/alnas/03.png') no-repeat;
+	}
+	.alnas .slide-03 .bg {
+		width: 800px;
+		height: 290px;
+		position: absolute;
+		top: 335px;
+		background: url('../assets/pages/alnas/bg-03.png') no-repeat;
+		left: 135px;
+		}
+
+/** 04 **/
+.alnas .slide-04 {
+	color: #fff;
+	background: url('../assets/pages/alnas/04.png') no-repeat;
+	}
 
 /** ALABUGA **/
 /** 01 **/
@@ -381,6 +493,53 @@
 		color: #000;
 		line-height: 50px;
 		}
+	.bkk .slide-01 .address {
+		top: 580px;
+		font-size: 16px;
+		color: #2d2d2d;
+		}
+	.bkk .slide-01 .contacts {
+		top: 640px;
+		font-size: 16px;
+		color: #2d2d2d;
+		}
+	.bkk .slide-01 .logo {
+		width: 139px;
+		height: 79px;
+		background: url('../assets/pages/bkk/logo.png') no-repeat;
+		left: 75px;
+		top: 480px;
+		position: absolute;
+		}
+.bkk .slide-02 {
+	color: #fff;
+	background: url('../assets/pages/bkk/02.png') no-repeat;
+	}
+	.bkk .slide-02 .title {
+		letter-spacing: -2px;
+		}
+	.bkk .slide-02 .text-01 {
+		top: 175px;
+		}
+	.bkk .slide-02 .text-02 {
+		top: 240px;
+		}
+	.bkk .slide-02 .text-03 {
+		top: 300px;
+		}
+	.bkk .slide-02 .text-04 {
+		top: 360px;
+		}
+	.bkk .slide-02 .text-05 {
+		top: 420px;
+		}
+.bkk .slide-03 {
+	color: #fff;
+	background: url('../assets/pages/bkk/03.png') no-repeat;
+	}
+.bkk .slide-03 .title {
+	letter-spacing: -1px;
+	}
 
 /** AK BARS HOLDING **/
 /** 01 **/
