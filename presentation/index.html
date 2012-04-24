@@ -159,13 +159,14 @@ development, joy and happiness. </p>
 							
 							<a class="more-max" href="javascript:toggle();"></a>
 							<a class="home" href="javascript:;"></a>
-	                       <div id="more-details" style="display:none;" class="more-text">
-	                       		<div class="subwrapper">
-		                       		<div class="header-top">
-		                       			<h1>UNIVERSIADE KAZAN 2013</h1></h1>
-		                       			<a href="javascript:toggle();" class="closebtn"></a>
-		                       		</div>
-		                       		<div class="text-body" id="iscroll">
+                            <div id="more-details" style="display:none;" class="more-text">
+                                <div class="subwrapper">
+		                       	<div class="header-top">
+		                       		<h1>UNIVERSIADE KAZAN 2013</h1></h1>
+		                       		<a href="javascript:toggle();" class="closebtn"></a>
+		                       	</div>
+                                <div class="content-scroller" id="iscroll">
+                                    <div class="text-body">
 		                       			<p>n July 6 – 17, 2013 the capital of the Republic of Tatarstan, Kazan city, renowned for its hospitality, will 
 become the centre of the key international multi-sport event – the XXVII World Summer Universiade.</p>
 		                       			<p>More than 13500 athletes and official delegation members from 170 countries of the world as well as 
@@ -210,7 +211,8 @@ and “Universiade is the whole World”. </p>
 		                       			<p>The motto of KazanUniversiade is “U are the world”. As the Universiade original brand sign is 
 represented by the letter “U”, the motto may be interpreted in two ways: “You are the World” 
 and “Universiade is the whole World”. </p>
-		                       		</div>
+                                    </div>
+                                </div>
 	                       		</div>
 	                       	</div>
 	                       </li>
@@ -237,7 +239,6 @@ and “Universiade is the whole World”. </p>
                         </li>
                     	</ul>
                 	</li>
-            		
             	</ul>
 			</div>
 		</div>
@@ -254,25 +255,29 @@ and “Universiade is the whole World”. </p>
 			function loaded() {
 				myScroll = new iScroll('iscroll');
 			}
-			document.addEventListener('DOMContentLoaded', loaded, false);
-			
+			//document.addEventListener('DOMContentLoaded', loaded, false);
 
-			function toggle() {
-				var ele = document.getElementById("more-details");
-				if(ele.style.display == "block") {
-	    			ele.style.display = "none";
-	  			} else {
-					ele.style.display = "block";
-				}
-			}
-
-
+            var toggle;
             $(function() {
-                new Desplazar($('#canvas'), { direction: Desplazar.VERTICAL })
 
-                $('#canvas > ul > li').each(function(idx, item) {
-                    new Desplazar($(item), { direction: Desplazar.HORIZONTAL });
-                });
+                toggle = function() {
+    				var ele = document.getElementById("more-details");
+	    			if(ele.style.display == "block") {
+                        ele.style.display = "none";
+                        app.bind();
+	  		    	} else {
+                        ele.style.display = "block";
+                        app.unbind();
+    				}
+	    		};
+
+                var app = new Desplazar($('#canvas'), { direction: Desplazar.VERTICAL });
+                //app.bind();
+                new iScroll('iscroll');
+
+                //$('#canvas > ul > li').each(function(idx, item) {
+                //    new Desplazar($(item), { direction: Desplazar.HORIZONTAL });
+                //});
 				$('#publicy-held-company a').lightBox({
 					imageBtnPrev: 'assets/gallery/prev_min.png',
 					imageBtnNext: 'assets/gallery/next_min.png'

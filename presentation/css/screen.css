@@ -41,6 +41,7 @@
 
 #canvas ul, #canvas ul li ul {
     position: absolute;
+    z-index: 10;
     -webkit-transition: all .2s ease-out;
        -moz-transition: all .2s ease-out;
     	 -o-transition: all .2s ease-out;
@@ -232,6 +233,7 @@
 	height:768px;
 	width:1024px;
 	background-color: #000;
+    z-index: 1000;
 
 }
 .closebtn {
@@ -255,7 +257,16 @@
 	margin:43px 40px;
 	background:#fff;
 	height:680px;
+    overflow: auto;
 }
+
+.content-scroller {
+    -webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
 .text-body {
 	padding-left: 45px;
 	padding-right: 45px;
@@ -266,6 +277,7 @@
 	font-size: 18px;
 	margin-bottom: 31px;
 	}
+
 #main, #enterprises {
 	position: relative;
 	height: 768px;

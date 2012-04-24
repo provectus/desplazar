@@ -1,5 +1,48 @@
+Function.prototype.bind = function(ctx) {
+    var self = this;
+    return function(){
+        return self.apply(ctx, arguments);
+    }
+};
 
-var Slideshow = function(container, options) {
+var Desplazar = function(container, options) {
+
+    var defaults = {
+        base: this,
+        direction: Desplazar.VERTICAL
+    };
+
+    this.options = $.extend({}, defaults, options);
+
+    this.base = this.options.base;
+
+    this.container = $(container);
+    this.slider = $(this.container).find('ul').first();
+
+    this.width  = this.container.width();
+    this.height = this.container.height();
+
+    this.hammer = $(this.slider).hammer();
+    this.slideshow = new Desplazar.Slideshow(this.slider, this.options);
+    this.children = [];
+
+    this.current = 0;
+
+    $(this.slider).find('> li').each(function(idx, item) {
+        this.children.push(new Desplazar($(item), {
+            base: this,
+            direction: Desplazar.HORIZONTAL
+        }));
+    }.bind(this));
+
+    this.setup();
+    this.bind();
+};
+
+Desplazar.VERTICAL = 0;
+Desplazar.HORIZONTAL = 1;
+
+Desplazar.Slideshow = function(container, options) {
     this.container = $(container);
     this.options = options;
 
@@ -11,7 +54,7 @@ var Slideshow = function(container, options) {
     this.totalSlides = this.slides.length;
 };
 
-Slideshow.prototype = {
+Desplazar.Slideshow.prototype = {
 
     reset: function() {
         this.width = this.container.parent().width();
@@ -36,6 +79,9 @@ Slideshow.prototype = {
 
         this.container.css(css);
         this.current = index;
+        if(this.options.base && this.options.direction == Desplazar.HORIZONTAL) {
+            this.options.base.setCurrent(index);
+        }
 
         return true;
     },
@@ -57,43 +103,34 @@ Slideshow.prototype = {
     }
 };
 
-var Desplazar = function(container, options) {
-
-    var defaults = {
-        direction: Desplazar.HORIZONTAL
-    };
-
-    this.options = $.extend({}, defaults, options);
-
-    this.container = $(container);
-    this.slider = $(this.container).find('ul').first();
-
-    this.width  = this.container.width();
-    this.height = this.container.height();
-
-    this.hammer = $(this.slider).hammer();
-    this.slideshow = new Slideshow(this.slider, this.options);
-
-    this.setup();
-    this.bind();
+Desplazar.Dummy = function() {};
+Desplazar.Dummy.prototype = {
+    type: 'dummy',
+    setCurrent: function(value) { },
+    getCurrent: function() { return 0 }
 };
-
-Desplazar.VERTICAL = 0;
-Desplazar.HORIZONTAL = 1;
 
 Desplazar.prototype = {
 
-    setup: function() {
-        var self = this,
-            defaults = {
-                height: this.height,
-                width: this.width
-            },
+    setCurrent: function(value) {
+        console.log('setting current: ', value);
+        this.current = value;
+    },
 
-            setDimensions = function(obj, options) {
-                options = $.extend({}, defaults, options || {});
-                $(obj).width(options.width).height(options.height);
-            };
+    getCurrent: function() {
+        return this.current;
+    },
+
+    setup: function() {
+        var defaults = {
+            height: this.height,
+            width: this.width
+        };
+
+        var setDimensions = function(obj, options) {
+            options = $.extend({}, defaults, options || {});
+            $(obj).width(options.width).height(options.height);
+        };
 
         var opts = {}
         switch(this.options.direction) {
@@ -108,38 +145,70 @@ Desplazar.prototype = {
         setDimensions(this.slider, opts);
     },
 
+    onDrag: function(ev) {
+        var left = 0,
+            top = 0;
+
+        if(this.options.direction == Desplazar.VERTICAL && this.base.getCurrent() == 0) {
+            if(ev.direction == 'up') {
+                top = 0 - ev.distance;
+            } else if(ev.direction == 'down') {
+                top = ev.distance;
+            }
+        } else if(this.options.direction == Desplazar.VERTICAL && this.base.getCurrent()) {
+            return true;
+        } else if(this.options.direction == Desplazar.HORIZONTAL) {
+            if(ev.direction == 'left') {
+                left = 0 - ev.distance;
+            } else if(ev.direction == 'right') {
+                left = ev.distance;
+            }
+        }
+
+        this.slideshow.getContainer().css({ marginLeft: left, marginTop: top });
+    },
+    onDragEnd: function(ev) {
+
+        this.slideshow.getContainer().css({ marginLeft: 0, marginTop: 0 });
+
+        if(Math.abs(ev.distance) > 100) {
+            if((
+                this.options.direction == Desplazar.HORIZONTAL &&
+                ev.direction == 'right'
+            ) || (
+                this.options.direction == Desplazar.VERTICAL &&
+                ev.direction == 'down'
+            )) {
+                this.slideshow.prev();
+            } else if((
+                this.options.direction == Desplazar.HORIZONTAL &&
+                ev.direction == 'left'
+            ) || (
+                this.options.direction == Desplazar.VERTICAL &&
+                ev.direction == 'up' &&
+                this.base.getCurrent() == 0
+            )) {
+                this.slideshow.next();
+            }
+        }
+
+        //if(this.base.getCurrent()) {
+        //    this.hammer.unbind('drag');
+        //    this.hammer.unbind('dragend');
+        //}
+    },
+
     bind: function() {
-        var self = this;
-        this.hammer.bind('drag', function(ev) {
-            var left = 0,
-                top = 0;
-
-            if(self.options.direction == Desplazar.VERTICAL) {
-                if(ev.direction == 'up') {
-                    top = 0 - ev.distance;
-                } else if(ev.direction == 'down') {
-                    top = ev.distance;
-                }
-            } else if (self.options.direction == Desplazar.HORIZONTAL) {
-                if(ev.direction == 'left') {
-                    left = 0 - ev.distance;
-                } else if(ev.direction == 'right') {
-                    left = ev.distance;
-                }
-            }
-
-            self.slideshow.getContainer().css({ marginLeft: left, marginTop: top });
-        }).bind('dragend', function(ev) {
-            self.slideshow.getContainer().css({ marginLeft: 0, marginTop: 0 });
-
-            if(Math.abs(ev.distance) > 100) {
-                if((self.options.direction == Desplazar.HORIZONTAL && ev.direction == 'right') || (self.options.direction == Desplazar.VERTICAL && ev.direction == 'down')) {
-                    self.slideshow.prev();
-                } else if((self.options.direction == Desplazar.HORIZONTAL && ev.direction == 'left') || (self.options.direction == Desplazar.VERTICAL && ev.direction == 'up')) {
-                    self.slideshow.next();
-                }
-            }
-        });
+        this.hammer
+            .bind('drag', this.onDrag.bind(this))
+            .bind('dragend', this.onDragEnd.bind(this));
+        //$('a[href^=#]').click(function(){
+        //    console.log('click');
+        //}.bind(this));
+    },
+    unbind: function() {
+        this.hammer.unbind('drag');
+        this.hammer.unbind('dragend');
     }
 
 }
