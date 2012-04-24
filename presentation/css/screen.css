@@ -65,6 +65,41 @@
 	position: relative;
     overflow: hidden;
 }
+.navigation {
+	position: absolute;
+	right:86px;
+	top:193px;
+}
+.navigation div a {
+	font-family: "DINPro-Regular", "MS Trebuchet", sans-serif;
+	font-size:22px;
+	color:#fff;
+	text-decoration:none;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+	padding:25px;
+	padding-top: 20px;
+	padding-bottom: 28px;
+	display: block;
+	line-height:1.1;
+}
+#main .navigation div {
+	padding-left:0;
+	width:312px;
+	margin-bottom:25px;
+	display:list-style;
+	position: relative;
+	top:auto;
+	bottom:auto;
+}
+.navigation div.red-lbl{
+	background: url(../assets/pages/main/red-lbl.png) no-repeat 0 0;
+}
+.navigation div.green-lbl{
+	background: url(../assets/pages/main/green-lbl.png) no-repeat 0 0;
+}
+.navigation div.green-r-lbl{
+	background: url(../assets/pages/main/green-r-lbl.png) no-repeat 0 0;
+}
 
 .slide-01 {
 
