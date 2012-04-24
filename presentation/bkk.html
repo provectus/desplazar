@@ -10,7 +10,8 @@
 		<div id="content">
 			<div id="canvas" class="bkk">
 				<ul>
-
+					<li>
+					<ul>
 					<li class="slide-01">
 						<h1 class="title">BAKERY AND CONFECTIONERY <br /> PLANT OJSC</h1>
 						<div class="hand-min"></div>
@@ -34,13 +35,16 @@
 						<p class="text text-03">Our company participates in all major industrial contests and food shows of regional and federal status. In late 2011, we <br /> were proud to be awarded the “Taste of Quality” and “Top 100 Russian products” prizes that attest to our nationwide <br /> recognition.</p>
 						<p class="text text-04">Since 2004, the Bread-baking and Confectionery Plant of Kazan has been annually certified for compliance with the <br /> requirements of the international standards in management and quality, ISO 9001 and ISO 22000.</p>
 						<p class="text text-05">Another standard that is strategically important for us to meet is the Halal Production requirements. Since 2005, <br /> when we started certifying our products for the Muslim market, the number of Halal items we produce has reached <br /> 70 and counting. The compliance with Halal requirements is guaranteed by the Committee on the standard “Halal” in <br /> the Spiritual Administration of Muslims of Tatarstan. We are convinced that Halal is a very significant quality mark for <br /> millions of our customers, and we proudly introduce several new Halal-certified items every year.</p>
+						<a class="home" href="/"></a>
 					</li>
 
 					<li class="slide-03">
 						<h1 class="title">BAKERY AND CONFECTIONERY PLANT OJSC</h1>
 						<h2 class="sub-title">PRODUCTS</h2>
+						<a class="home" href="/"></a>
 					</li>
-
+					</ul>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -53,12 +57,17 @@
 
 		<script type="text/javascript">
 			$(function() {
-				new Desplazar('#canvas');
+				new Desplazar($('#canvas'), { direction: Desplazar.VERTICAL })
+
+				$('#canvas > ul > li').each(function(idx, item) {
+					new Desplazar($(item), { direction: Desplazar.HORIZONTAL });
+				});
 				$('#publicy-held-company a').lightBox({
 					imageBtnPrev: 'assets/gallery/prev_min.png',
 					imageBtnNext: 'assets/gallery/next_min.png'
 				});
 			});
 		</script>
+
 	</body>
 </html>

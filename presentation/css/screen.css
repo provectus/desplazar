@@ -86,7 +86,7 @@
 	padding-left:0;
 	width:312px;
 	margin-bottom:25px;
-	display:list-style;
+	display: list-style;
 	position: relative;
 	top:auto;
 	bottom:auto;
@@ -104,6 +104,36 @@
 .slide-01 {
 
 }
+.enterprises {
+	background: url(../assets/pages/enterprises.png) no-repeat 0 0;
+	}
+	.enterprises a {
+		position: absolute;
+		width: 304px;
+		height: 95px
+		}
+		.enterprises .ak-bars-holding {
+			top: 173px;
+			left: 53px;
+			}
+		.enterprises .ak-bars-aero {
+			top: 173px;
+			left: 368px;
+			}
+		.enterprises .alabuga {
+			top: 278px;
+			left: 368px;
+			}
+		.enterprises .alnas {
+			top: 173px;
+			left: 682px;
+			}
+		.enterprises .bkk {
+			top: 488px;
+			left: 53px;
+			}
+
+
 
 .title {
 	position: absolute;
@@ -237,13 +267,15 @@
 	left: 268px;
 	top:564px;
 	}
+
 .more-text {
 	position: absolute;
 	top:0;
 	height:768px;
 	width:1024px;
 	background-color: #000;
-}
+	}
+
 .closebtn {
 	position: absolute;
 	height:52px;
@@ -252,30 +284,46 @@
 	right:60px;
 	background:url('../assets/controls/close-btn.png') no-repeat;
 	display: block;
-}
+	}
+
 .header-top {
 	color:#000;
 	padding:20px 45px;
-}
+	}
+
 .header-top h1 {
 	font-family: DINPro-Regular;
 	font-size: 48px;
-}
+	}
+
 .subwrapper {
 	margin:43px 40px;
 	background:#fff;
 	height:680px;
-}
+	}
+
 .text-body {
 	padding-left: 45px;
 	padding-right: 45px;
-}
+	}
+
+a.home {
+	display: block;
+	position: absolute;
+	bottom: 30px;
+	right: 40px;
+	width: 37px;
+	height: 31px;
+	background: url('../assets/controls/home.png') no-repeat;
+	}
+
 .text-body p {
 	color:#000;
 	font-family: DINPro-Regular;
 	font-size: 18px;
 	margin-bottom: 31px;
 	}
+
 #main, #enterprises {
 	position: relative;
 	height: 768px;
@@ -643,36 +691,27 @@
 	background: url('../assets/pages/ak-bars-aero/02.jpg') no-repeat;
 	color: #fff;
 	}
-	.ak-bars-aero .slide-02 .home {
-		display: block;
-		position: absolute;
-		bottom: 30px;
-		right: 40px;
-		width: 37px;
-		height: 31px;
-		background: url('../assets/controls/home.png') no-repeat;
+	.ak-bars-aero .slide-02 .m-header-01 {
+		top: 233px;
 		}
-		.ak-bars-aero .slide-02 .m-header-01 {
-			top: 233px;
-			}
-		.ak-bars-aero .slide-02 .m-header-02 {
-			top: 425px;
-			}
-		.ak-bars-aero .slide-02 .text-01 {
-			top: 275px;
-			}
-		.ak-bars-aero .slide-02 .text-02 {
-			top: 332px;
-			}
-		.ak-bars-aero .slide-02 .list-item-01 {
-			top: 467px;
-			}
-		.ak-bars-aero .slide-02 .list-item-02 {
-			top: 525px;
-			}
-		.ak-bars-aero .slide-02 .list-item-03 {
-			top: 557px;
-			}
+	.ak-bars-aero .slide-02 .m-header-02 {
+		top: 425px;
+		}
+	.ak-bars-aero .slide-02 .text-01 {
+		top: 275px;
+		}
+	.ak-bars-aero .slide-02 .text-02 {
+		top: 332px;
+		}
+	.ak-bars-aero .slide-02 .list-item-01 {
+		top: 467px;
+		}
+	.ak-bars-aero .slide-02 .list-item-02 {
+		top: 525px;
+		}
+	.ak-bars-aero .slide-02 .list-item-03 {
+		top: 557px;
+		}
 
 /** 03 **/
 .ak-bars-aero .slide-03 {
@@ -969,7 +1008,7 @@
 .tatarstan-universiada .slide-09 .title {
 	left:264px;
 	}
-.sub-title {
+.tatarstan-universiada .slide-09 .sub-title {
 	left:264px;
 	}
 	.tatarstan-universiada .slide-09 .home {
