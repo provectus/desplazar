@@ -133,6 +133,30 @@
 			top: 488px;
 			left: 53px;
 			}
+		.enterprises .kazan-helicopters {
+			top: 383px;
+			left: 53px;
+			}
+		.enterprises .kamaz {
+			top: 278px;
+			left: 53px;
+			}
+		.enterprises .pestrchinka {
+			top: 488px;
+			left: 368px;
+			}
+		.enterprises .gorky {
+			top: 383px;
+			left: 368px;
+			}
+		.enterprises .compress {
+			top: 278px;
+			left: 682px;
+			}
+		.enterprises .kai {
+			left: 682px;
+			top: 383px;
+			}
 
 
 
@@ -178,6 +202,15 @@
 	position: absolute;
 	cursor: pointer;
 }
+
+.invisible-home {
+	display: block;
+	position: absolute;
+	bottom: 34px;
+	right: 39px;
+	width: 37px;
+	height: 31px;
+	}
 
 .gallery-item {
 	width: 284px;
@@ -335,7 +368,6 @@ height:768px;
 	-o-box-sizing:border-box;
 	box-sizing:border-box;
 }
->>>>>>> f3fd128f02aa8b19b00b4e69ade686081e0a5259
 
 .text-body {
 	padding-left: 45px;
@@ -1165,3 +1197,155 @@ top:574px;
 		left: 72px;
 		}
 	
+/** KAMAZ **/
+/** 01 **/
+.kamaz .slide-01 {
+	background: url('../assets/pages/kamaz/01.png') no-repeat;
+	}
+/** 02 **/
+.kamaz .slide-02 {
+	background: url('../assets/pages/kamaz/02.png') no-repeat;
+	}
+	.kamaz .slide-02 .more {
+		width: 82px;
+		height: 82px;
+		position: absolute;
+		top: 553px;
+		left: 62px;
+		cursor: pointer;
+		}
+/** 03 **/
+.kamaz .slide-03 {
+	background: url('../assets/pages/kamaz/03.png') no-repeat;
+	}
+	.kamaz .slide-03 .more-01 {
+		width: 82px;
+		height: 82px;
+		position: absolute;
+		top: 284px;
+		left: 69px;
+		cursor: pointer;
+		}
+	.kamaz .slide-03 .more-02 {
+		width: 82px;
+		height: 82px;
+		position: absolute;
+		top: 420px;
+		left: 69px;
+		cursor: pointer;
+		}
+.kamaz .slide-04 {
+	background: url('../assets/pages/kamaz/04.png') no-repeat;
+	}
+
+/** PESTRCHINLKA **/
+/** 01 **/
+.pestrchinka .slide-01 {
+	background: url('../assets/pages/pestrchinka/01.png') no-repeat;
+	}
+/** 02 **/
+.pestrchinka .slide-02 {
+	background: url('../assets/pages/pestrchinka/02.png') no-repeat;
+	}
+	.pestrchinka .slide-02 .more {
+		width: 82px;
+		height: 82px;
+		position: absolute;
+		top: 564px;
+		left: 63px;
+		cursor: pointer;
+		}
+/** 03 **/
+.pestrchinka .slide-03 {
+	background: url('../assets/pages/pestrchinka/03.png') no-repeat;
+	}
+
+
+/** COMPRESS **/
+/** 01 **/
+.compress .slide-01 {
+	background: url('../assets/pages/compress/01.png') no-repeat;
+	}
+/** 02 **/
+.compress .slide-02 {
+	background: url('../assets/pages/compress/02.png') no-repeat;
+	}
+	.compress .slide-02 .more {
+		width: 82px;
+		height: 82px;
+		position: absolute;
+		top: 270px;
+		left: 63px;
+		cursor: pointer;
+		}
+/** 03 **/
+.compress .slide-03 {
+	background: url('../assets/pages/compress/03.png') no-repeat;
+	}
+	.compress .slide-03 .more-01 {
+		width: 82px;
+		height: 82px;
+		position: absolute;
+		top: 233px;
+		left: 94px;
+		cursor: pointer;
+		}
+	.compress .slide-03 .more-02 {
+		width: 82px;
+		height: 82px;
+		position: absolute;
+		top: 484px;
+		left: 94px;
+		cursor: pointer;
+		}
+/** 04 **/
+.compress .slide-04 {
+	background: url('../assets/pages/compress/04.png') no-repeat;
+	}
+	.compress .slide-04 .more-01 {
+		width: 82px;
+		height: 82px;
+		position: absolute;
+		top: 233px;
+		left: 110px;
+		cursor: pointer;
+		}
+
+
+/** KAI **/
+/** 01 **/
+.kai .slide-01 {
+	background: url('../assets/pages/kai/01.png') no-repeat;
+	}
+	.kai .slide-01 .more {
+		width: 82px;
+		height: 82px;
+		position: absolute;
+		top: 371px;
+		left: 70px;
+		cursor: pointer;
+		}
+/** 02 **/
+.kai .slide-02 {
+	background: url('../assets/pages/kai/02.png') no-repeat;
+	}
+	.kai .slide-02 .more {
+		width: 82px;
+		height: 82px;
+		position: absolute;
+		top: 205px;
+		left: 80px;
+		cursor: pointer;
+		}
+/** 03 **/
+.kai .slide-03 {
+	background: url('../assets/pages/kai/03.png') no-repeat;
+	}
+	.kai .slide-03 .more {
+		width: 82px;
+		height: 82px;
+		position: absolute;
+		top: 201px;
+		left: 101px;
+		cursor: pointer;
+		}
