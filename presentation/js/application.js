@@ -74,6 +74,7 @@ var Desplazar = function(container, options) {
     this.hammer = $(this.slider).hammer();
     this.slideshow = new Slideshow(this.slider, this.options);
 
+    this.setup();
     this.bind();
 };
 
@@ -81,6 +82,31 @@ Desplazar.VERTICAL = 0;
 Desplazar.HORIZONTAL = 1;
 
 Desplazar.prototype = {
+
+    setup: function() {
+        var self = this,
+            defaults = {
+                height: this.height,
+                width: this.width
+            },
+
+            setDimensions = function(obj, options) {
+                options = $.extend({}, defaults, options || {});
+                $(obj).width(options.width).height(options.height);
+            };
+
+        var opts = {}
+        switch(this.options.direction) {
+            case Desplazar.HORIZONTAL:
+                opts = { width: this.width * this.slideshow.totalSlides };
+                break;
+            case Desplazar.VERTICAL:
+                opts = { height: this.height * this.slideshow.totalSlides };
+                break;
+        }
+
+        setDimensions(this.slider, opts);
+    },
 
     bind: function() {
         var self = this;

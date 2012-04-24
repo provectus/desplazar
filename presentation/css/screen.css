@@ -46,7 +46,7 @@
     	 -o-transition: all .2s ease-out;
     		transition: all .2s ease-out;
     top: 0;
-    width: 5000px;
+    width: 2000px;
     height: 768px;
     margin: 0;
     padding: 0;
@@ -55,7 +55,7 @@
 
 #canvas ul {
     width: 1024px;
-    height: 2000px;
+    height: 1000px;
 }
 
 #canvas ul li ul li {
