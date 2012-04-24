@@ -129,7 +129,11 @@
 	left: 72px;
 	top: 127px;
 }
-
+.within-list span{
+	display: list-item;
+	list-style-type:disc;
+	list-style-position:inside;
+}
 .gallery-ico {
 	width: 83px;
 	height: 83px;
@@ -155,7 +159,17 @@
 	background: url('../assets/controls/video-item.png') no-repeat;
 	
 	}
+.gallery-item.sm {
+	background: url('../assets/controls/gv-item.png') no-repeat;
+	width: 212px;
+	height: 159px;
+	position: static;
+	float:left;
 
+	}
+.last {
+	margin-bottom: 30px;
+}
 	.gallery-item img {
 		position: absolute;
 		left: 14px;
@@ -191,7 +205,18 @@
 	left: 74px;
 	position: absolute;
 	}
+.galleryz {
 
+padding-top: 200px;
+
+width:950px;
+height:768px;
+
+}
+.gall-wrap {
+	padding-left: 182px;
+	width:800px;
+}
 .text-block {
 	position: absolute;
 	}
@@ -1013,3 +1038,93 @@
 			right: 32px;
 			top: 433px;
 			}
+/** KAZ **/
+/** 01 **/
+.kazan-helicopters .more-max {
+left:74px;
+top:574px;
+}
+.kazan-helicopters .slide-0 {
+	color: #fff;
+	background: url('../assets/pages/kazan-helicopters/01.jpg') no-repeat;
+	}
+	.kazan-helicopters .slide-0 .address {
+		font-family: DINPro-Bold;
+		top: 588px;
+		left: 72px;
+		position: absolute;
+		font-size: 14px;
+		}
+		.ak-bars-aero .slide-0 .address p {
+			line-height: 16px;
+			}
+	.kazan-helicopters .slide-0 .tel {
+		font-family: DINPro-Regular;
+		left: 72px;
+		top: 654px;
+		position: absolute;
+		font-size: 14px;
+		}
+		.kazan-helicopters .slide-0 .tel .site {
+			top: 33px;
+			position: absolute;
+			}
+
+/** 02 **/
+.kazan-helicopters .slide-01	 {
+	background: url('../assets/pages/kazan-helicopters/02.jpg') no-repeat;
+	color: #fff;
+	}
+
+.kazan-helicopters .slide-01 .text {
+		width:671px;
+		font-size:18px;
+	}
+.kazan-helicopters .slide-01 .text-01 {
+	top: 176px;
+	}
+.kazan-helicopters .slide-01 .text-02 {
+	top: 234px;
+	}
+.kazan-helicopters .slide-01 .text-03 {
+	top: 290px;
+	}
+.kazan-helicopters .slide-01 .text-04 {
+	top: 390px;
+	}
+.kazan-helicopters .slide-01 .text-05 {
+	top: 470px;
+	}
+.kazan-helicopters .slide-01 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;
+		}
+/** 03 **/
+.kazan-helicopters .slide-02 {
+	background: url('../assets/pages/kazan-helicopters/03.jpg') no-repeat;
+	color: #fff;
+	overflow-y:auto !important;
+	}
+	.kazan-helicopters .slide-02 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;
+		}
+	.kazan-helicopters .slide-02 .video-ico {
+		top: 584px;
+		left: 72px;
+		}
+	.kazan-helicopters .slide-02 .gallery-ico {
+		top: 242px;
+		left: 72px;
+		}
+	
