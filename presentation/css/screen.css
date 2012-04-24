@@ -300,13 +300,8 @@ height:768px;
 	height:768px;
 	width:1024px;
 	background-color: #000;
-<<<<<<< HEAD
-	}
-
-=======
     z-index: 1000;
 }
->>>>>>> f3fd128f02aa8b19b00b4e69ade686081e0a5259
 .closebtn {
 	position: absolute;
 	height:52px;
@@ -331,9 +326,6 @@ height:768px;
 	margin:43px 40px;
 	background:#fff;
 	height:680px;
-<<<<<<< HEAD
-	}
-=======
     overflow: auto;
 }
 
