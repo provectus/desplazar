@@ -18,7 +18,21 @@ function loaded() {
  				}
   		};
 
-             var app = new Desplazar($('#canvas'), { direction: Desplazar.VERTICAL });
+             //document.getElementById('content').webkitRequestFullScreen();
+
+            var app = new Desplazar($('#canvas'), { direction: Desplazar.VERTICAL });
+
+            document.ontouchmove = function (event) {
+                if (!event.elementIsEnabled) {
+                    event.preventDefault();
+                }
+            };
+
+            $('.scrollable').each(function(idx, element){
+                element.ontouchmove = function(event) {
+                    event.elementIsEnabled = true;
+                }
+            });
              //app.bind();
              //new iScroll('iscroll');
 
