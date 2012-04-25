@@ -1,6 +1,6 @@
 var myScroll;
 function loaded() {
-	myScroll = new iScroll('iscroll');
+//	myScroll = new iScroll('iscroll');
 }
 //document.addEventListener('DOMContentLoaded', loaded, false);
 
@@ -20,7 +20,7 @@ function loaded() {
 
              var app = new Desplazar($('#canvas'), { direction: Desplazar.VERTICAL });
              //app.bind();
-             new iScroll('iscroll');
+             //new iScroll('iscroll');
 
              //$('#canvas > ul > li').each(function(idx, item) {
              //    new Desplazar($(item), { direction: Desplazar.HORIZONTAL });
@@ -28,5 +28,11 @@ function loaded() {
 	$('#publicy-held-company a').lightBox({
 		imageBtnPrev: 'assets/gallery/prev_min.png',
 		imageBtnNext: 'assets/gallery/next_min.png'
+	});
+	
+	$('.gallery-wrap a').lightBox({
+		imageBtnPrev: 'assets/gallery/prev_min.png',
+		imageBtnNext: 'assets/gallery/next_min.png',
+		imageBtnClose: 'assets/gallery/close_min.png'
 	});
 });
