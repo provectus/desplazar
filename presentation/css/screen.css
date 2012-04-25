@@ -211,7 +211,35 @@
 	width: 37px;
 	height: 31px;
 	}
+	.gallery-wrap{
+		position:absolute;
+		top:230px;
+		left:230px;
+		width:766px;
+		height:476px;
+		overflow:auto;
+		}
+		.gallery-wrap .gallery-item{
+			float:left;
+			position:static;
+			margin-right:40px;
+			margin-bottom:40px;
+		}
+		/* scrollbars
+		---------------------------------------- */
+		::-webkit-scrollbar {
+		    width: 12px;
+		}
 
+		::-webkit-scrollbar-track {
+		    background:transparent;
+		}
+
+		::-webkit-scrollbar-thumb {
+		    border-radius: 10px;
+		    background:rgba(255,255,255,.5);
+		}
+		
 .gallery-item {
 	width: 284px;
 	height: 213px;
@@ -962,7 +990,11 @@ a.home {
 		height: 31px;
 		background: url('../assets/controls/home.png') no-repeat;
 		}
-	.tatarstan-universiada .slide-06 .video-ico {
+	.video-ico{
+		left:92px;
+		top:268px;
+	}
+	.tatarstan-universiada .slide-06 .video-ico,.video-ico {
 		top: 215px;
 		left: 122px;
 		}
