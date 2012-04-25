@@ -83,14 +83,23 @@
 	display: block;
 	line-height:1.1;
 }
-#main .navigation div {
+#main .navigation div,
+#main2 .navigation div {
 	padding-left:0;
 	width:312px;
 	margin-bottom:25px;
-	display: list-style;
+	display:list-style;
 	position: relative;
 	top:auto;
 	bottom:auto;
+}
+#main .navigation div.red-lbl,
+#main2 .navigation div.red-lbl,
+#main .navigation div.green-lbl,
+#main2 .navigation div.green-lbl,
+#main .navigation div.green-r-lbl,
+#main2 .navigation div.green-r-lbl {
+	right:0;
 }
 .navigation div.red-lbl{
 	background: url(../assets/pages/main/red-lbl.png) no-repeat 0 0;
@@ -424,9 +433,13 @@ a.home {
 	height: 768px;
 	}
 #main {
-	background: url('../assets/pages/main/main.png') no-repeat;
+	background: url('../assets/pages/main/rots/01.jpg') no-repeat;
+	position:absolute;
+    height:768px;
+    width:1024px;
 	}
-	#main div {
+	#main div,
+	#main2 div {
 		cursor: pointer;
 		position: absolute;
 		right: 86px;
@@ -1381,3 +1394,207 @@ top:574px;
 		left: 101px;
 		cursor: pointer;
 		}
+/**president **/
+/** 01 **/
+.presedent .slide-01 {
+	background: url('../assets/pages/presedent/01.png') no-repeat;
+	color: #fff;
+	}
+
+/** 02 **/
+.presedent .slide-02 {
+	background: url('../assets/pages/presedent/02.png') no-repeat;
+	color: #fff;
+	}
+.presedent .slide-02 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;	
+	}
+/** 03 **/
+.presedent .slide-03 {
+	background: url('../assets/pages/presedent/03.png') no-repeat;
+	color: #fff;
+	}
+	.presedent .slide-03 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;	
+	}
+/** 04 **/
+.presedent .slide-04 {
+	background: url('../assets/pages/presedent/04.png') no-repeat;
+	color: #fff;
+	}
+	.presedent .slide-04 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;	
+	}
+/** 05 **/
+.presedent .slide-05 {
+	background: url('../assets/pages/presedent/05.png') no-repeat;
+	color: #fff;
+	}
+	.presedent .slide-05 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;	
+	}
+/** 06 **/
+.presedent .slide-06 {
+	background: url('../assets/pages/presedent/06.png') no-repeat;
+	color: #fff;
+	}
+	.presedent .slide-06 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;	
+	}
+/** 07 **/
+.presedent .slide-07 {
+	background: url('../assets/pages/presedent/07.png') no-repeat;
+	color: #fff;
+	}
+	.presedent .slide-07 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;	
+	}
+/** 08 **/
+.presedent .slide-08 {
+	background: url('../assets/pages/presedent/08.png') no-repeat;
+	color: #fff;
+	}
+	.presedent .slide-08 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;	
+	}
+/** 09 **/
+.presedent .slide-09 {
+	background: url('../assets/pages/presedent/09.png') no-repeat;
+	color: #fff;
+	}
+	.presedent .slide-09 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;	
+	}
+/** 10 **/
+.presedent .slide-10 {
+	background: url('../assets/pages/presedent/10.png') no-repeat;
+	color: #fff;
+	}
+	.presedent .slide-10 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;	
+	}
+/** 11 **/
+.presedent .slide-11 {
+	background: url('../assets/pages/presedent/11.png') no-repeat;
+	color: #fff;
+	}
+	.presedent .slide-11 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;	
+	}
+/** 12 **/
+.presedent .slide-12 {
+	background: url('../assets/pages/presedent/12.png') no-repeat;
+	color: #fff;
+	}
+	.presedent .slide-12 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;	
+	}
+/** 13 **/
+.presedent .slide-13 {
+	background: url('../assets/pages/presedent/13.png') no-repeat;
+	color: #fff;
+	}
+	.presedent .slide-13 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;	
+	}
+	/** 14 **/
+.presedent .slide-14 {
+	background: url('../assets/pages/presedent/14.png') no-repeat;
+	color: #fff;
+	}
+	.presedent .slide-14 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;	
+	}
+	/** 10 **/
+.presedent .slide-15 {
+	background: url('../assets/pages/presedent/15.png') no-repeat;
+	color: #fff;
+	}
+	.presedent .slide-15 .home {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		right: 40px;
+		width: 37px;
+		height: 31px;
+		background: url('../assets/controls/home.png') no-repeat;	
+	}
+

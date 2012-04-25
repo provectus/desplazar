@@ -1,3 +1,15 @@
+$( function(){
+    var bgImages = [ '01.jpg', '02.jpg', '03.jpg', '04.jpg', '05.jpg', '06.jpg' ];
+    var currImage = '01.jpg';
+    setInterval( function(){
+        do{
+            var randImage = bgImages[Math.ceil(Math.random()*(bgImages.length-1))];
+        }while( randImage == currImage )
+        currImage = randImage;
+        $('#main').BgImageTransition( 'assets/pages/main/rots/'+currImage );
+        console.log(currImage);
+    }, 5000)
+})
 var myScroll;
 function loaded() {
 //	myScroll = new iScroll('iscroll');
