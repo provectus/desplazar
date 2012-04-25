@@ -66,20 +66,20 @@
 	height: 100%;
 	zoom: 1;
 	display: block;
-	bottom:-100px;
+	bottom:-80px;
 	position: relative;
 	
 }
 #lightbox-nav-btnPrev { 
 	left:0;
 	float: left;
-	background-image:url(../assets/gallery/prev_min.png)  !important;
+	background-image:url(../assets/gallery/prev-min1.png)  !important;
 	background-position:100% 100%  !important;
 }
 #lightbox-nav-btnNext { 
 	right: 0; 
 	float: right;
-	background-image:url(../assets/gallery/next_min.png)  !important;
+	background-image:url(../assets/gallery/next-min1.png)  !important;
 	background-position:0 100%  !important;
 }
 #lightbox-container-image-data-box {
@@ -118,6 +118,6 @@ background:red;
 	height:51px;
 	position:absolute;
 	display:block;
-	bottom:30px;
+	bottom:20px;
 	right:20px;
 }

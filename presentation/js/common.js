@@ -31,8 +31,8 @@ function loaded() {
 	});
 	
 	$('.gallery-wrap a').lightBox({
-		imageBtnPrev: 'assets/gallery/prev_min.png',
-		imageBtnNext: 'assets/gallery/next_min.png',
+		imageBtnPrev: 'assets/gallery/prev-min1.png',
+		imageBtnNext: 'assets/gallery/next-min1.png',
 		imageBtnClose: 'assets/gallery/close_min.png'
 	});
 });
