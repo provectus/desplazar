@@ -56,7 +56,18 @@ function loaded() {
 		imageBtnNext: 'assets/gallery/next_min.png'
 	});
 	
-	$('.gallery-wrap a').lightBox({
+
+	$('a[rel="lightbox[group1]"]').lightBox({
+		imageBtnPrev: 'assets/gallery/prev-min1.png',
+		imageBtnNext: 'assets/gallery/next-min1.png',
+		imageBtnClose: 'assets/gallery/close_min.png'
+	});
+	$('a[rel="lightbox[group2]"]').lightBox({
+		imageBtnPrev: 'assets/gallery/prev-min1.png',
+		imageBtnNext: 'assets/gallery/next-min1.png',
+		imageBtnClose: 'assets/gallery/close_min.png'
+	});
+	$('a[rel="lightbox[group3]"]').lightBox({
 		imageBtnPrev: 'assets/gallery/prev-min1.png',
 		imageBtnNext: 'assets/gallery/next-min1.png',
 		imageBtnClose: 'assets/gallery/close_min.png'
