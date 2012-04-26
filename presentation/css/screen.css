@@ -27,7 +27,7 @@
 
 #content {
 	width: 1024px;
-	height: 690px;
+	height: 768px;
 	overflow: hidden;
 	margin: 0 auto;
 	}
@@ -36,7 +36,9 @@
     overflow: hidden;
     position: relative;
     width: 100%;
-    height: 690px !important;
+ /*   height: 690px !important; */
+ height:768px;
+
 }
 
 #canvas ul, #canvas ul li ul {
@@ -844,6 +846,10 @@ a.home {
 			top: 215px;
 			}
 /** TATARSTAN universiada **/
+.tatarstan-universiada.initializer ul,
+.tatarstan-universiada.initializer {
+	height:768px !important;
+}
 /** 01 **/
 .tatarstan-universiada .slide-01 {
 	background: url('../assets/pages/tatarstan-universiada/01.png') no-repeat;
@@ -1602,4 +1608,37 @@ top:574px;
 		height: 31px;
 		background: url('../assets/controls/home.png') no-repeat;	
 	}
+/** TIDA **/
+.tida {
 
+}
+.tida .slide-01 {
+	background: url('../assets/pages/tida/main.png') no-repeat;
+	color: #fff;
+	}
+.tida .bt-left a {
+	display: block;
+	height:102px;
+	width:311px;
+}
+.projetsx {
+	background:  url('../assets/pages/tida/controls/projects.png') no-repeat;
+	position: absolute;
+	left:51px;
+	top:190px;
+	cursor: pointer;
+}
+.aboutx {
+	background:  url('../assets/pages/tida/controls/about.png') no-repeat;
+position: absolute;
+	left:51px;
+	top:323px;
+	cursor: hand;
+}
+.casansummitx {
+	background:  url('../assets/pages/tida/controls/kazansummit.png') no-repeat;
+position: absolute;
+	left:51px;
+	top:454px;
+	cursor: hand;
+}
