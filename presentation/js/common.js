@@ -1,7 +1,7 @@
 $(function() {
 
     var bgImages = [ '01.jpg', '02.jpg', '03.jpg', '04.jpg', '05.jpg', '06.jpg' ];
-    var currImage = '01.jpg';
+    var currImage = 'main.jpg';
     setInterval( function(){
         do{
             var randImage = bgImages[Math.ceil(Math.random()*(bgImages.length-1))];

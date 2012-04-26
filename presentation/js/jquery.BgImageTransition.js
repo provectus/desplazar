@@ -28,7 +28,7 @@ jQuery.fn.extend({
         //default plugin settings
         var settings = jQuery.extend({
             effect: {opacity: 'toggle'},
-            duration: 'slow',
+            duration: 'middle',
             easing: 'linear',
             callback: function(){},
             helperElementId: this.attr('id')+'2',
