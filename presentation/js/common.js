@@ -51,10 +51,6 @@ function loaded() {
              //$('#canvas > ul > li').each(function(idx, item) {
              //    new Desplazar($(item), { direction: Desplazar.HORIZONTAL });
              //});
-	$('#publicy-held-company a').lightBox({
-		imageBtnPrev: 'assets/gallery/prev_min.png',
-		imageBtnNext: 'assets/gallery/next_min.png'
-	});
 	
 
 	$('a[rel="lightbox[group1]"]').lightBox({
