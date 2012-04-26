@@ -80,9 +80,15 @@ $(function() {
             this.getSettings(function(settings) {
                 var group = 'lightbox[' + this.subdir + this.type + ']';
                 var path = this.buildMediaPath();
+                var cls = '';
                 for(var i = 0; i < settings.count; ++i) {
+
+                    if (i >= 2) {
+                        cls = 'hidden';
+                    }
+
                     this.container.append(
-                        $('<div>').attr({ class: 'gallery-item video' }).append(
+                        $('<div>').attr({ class: 'gallery-item video' }).addClass(cls).append(
                             $('<a>').attr({
                                 href: path + '/' + i + this.ext,
                                 rel: group
