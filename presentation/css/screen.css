@@ -30,7 +30,13 @@
 	height: 690px;
 	overflow: hidden;
 	margin: 0 auto;
-	}
+}
+
+#content .subpage {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
 
 #canvas, #canvas ul li {
     overflow: hidden;

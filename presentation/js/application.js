@@ -128,6 +128,9 @@ Desplazar.Dummy.prototype = {
 
 Desplazar.prototype = {
 
+    openExternal: function(href) {
+    },
+
     setCurrent: function(value) {
         console.log('setting current: ', value);
         this.current = value;
