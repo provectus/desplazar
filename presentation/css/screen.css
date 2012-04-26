@@ -344,7 +344,7 @@ height:768px;
 
 .hand-min {
 	position: absolute;
-	bottom: 50px;
+	bottom: 115px;
 	right: 50px;
 	width: 95px;
 	height: 76px;
@@ -560,6 +560,9 @@ a.home {
 	color: #fff;
 	background: url('../assets/pages/alnas/04.png') no-repeat;
 	}
+	.alnas .slide-04 .photo-min {
+		top: 295px;
+		}
 
 /** ALABUGA **/
 /** 01 **/
