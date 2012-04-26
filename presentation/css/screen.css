@@ -25,6 +25,8 @@
 	font-style: normal;
 	}
 
+.hidden { display: none; }
+
 #content {
 	width: 1024px;
 	height: 768px;

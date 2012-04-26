@@ -193,7 +193,7 @@
 				$('#lightbox-image,#lightbox-nav,#lightbox-nav-btnPrev,#lightbox-nav-btnNext,#lightbox-container-image-data-box,#lightbox-image-details-currentNumber').hide();
 			}
 			// Image preload process
-            if(settings.media == 'photos') {
+            if(settings.media == 'photos' || settings.media == 'present') {
     			var objImagePreloader = new Image();
 	    		objImagePreloader.onload = function() {
 		    		$('#lightbox-image').attr('src', settings.imageArray[settings.activeImage][0]);

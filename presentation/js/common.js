@@ -61,8 +61,12 @@ $(function() {
         this.container = $(container);
 
         this.type = this.container.data('media');
+        this.previewNum = parseInt(this.container.data('preview-num') || '2');
+
+        this.prefix = this.container.data('subdir') || '';
+
         this.subdir = this.parsePathname(document.location.pathname);
-        this.ext = this.type == 'photos' ? '.jpg' : '.mp4';
+        this.ext = this.type == 'photos' || this.type == 'present' ? '.jpg' : '.mp4';
 
         this.drawGallery();
     };
@@ -78,17 +82,17 @@ $(function() {
 
         drawGallery: function() {
             this.getSettings(function(settings) {
-                var group = 'lightbox[' + this.subdir + this.type + ']';
+                var group = 'lightbox[' + this.subdir + this.prefix + this.type + ']';
                 var path = this.buildMediaPath();
                 var cls = '';
                 for(var i = 0; i < settings.count; ++i) {
 
-                    if (i >= 2) {
+                    if (i >= this.previewNum) {
                         cls = 'hidden';
                     }
 
                     this.container.append(
-                        $('<div>').attr({ class: 'gallery-item video' }).addClass(cls).append(
+                        $('<div>').attr({ class: 'gallery-item video ' + cls }).append(
                             $('<a>').attr({
                                 href: path + '/' + i + this.ext,
                                 rel: group
@@ -114,11 +118,17 @@ $(function() {
         },
 
         buildMediaPath: function() {
-            return [
+            var path = [
                 this.options.basepath,
                 this.type,
-                this.subdir
-            ].join('/');
+                this.subdir,
+            ];
+
+            if(this.prefix) {
+                path.push(this.prefix);
+            }
+
+            return path.join('/');
         }
     };
 
