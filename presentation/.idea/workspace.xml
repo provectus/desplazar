@@ -22,64 +22,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="common.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/common.js">
+      <file leaf-file-name="compress.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/compress.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="1046" selection-end="1054" vertical-scroll-proportion="0.0">
+            <state line="31" column="83" selection-start="804" selection-end="804" vertical-scroll-proportion="-18.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alnas.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/alnas.html">
+      <file leaf-file-name="gorky.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gorky.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="0" selection-start="3306" selection-end="3306" vertical-scroll-proportion="-11.0">
+            <state line="25" column="83" selection-start="620" selection-end="620" vertical-scroll-proportion="-10.730769">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kazan-summit.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="kai.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kai.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="83" selection-start="507" selection-end="507" vertical-scroll-proportion="-11.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kamaz.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kamaz.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="83" selection-start="477" selection-end="477" vertical-scroll-proportion="-7.4615383">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kazan-helicopters.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kazan-helicopters.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="65" selection-start="2115" selection-end="2115" vertical-scroll-proportion="-28.76923">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kazan-summit.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kazan-summit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="0" selection-start="1472" selection-end="1472" vertical-scroll-proportion="1.6746268">
+            <state line="19" column="69" selection-start="726" selection-end="726" vertical-scroll-proportion="-15.615385">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ak-bars-aero.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ak-bars-aero.html">
+      <file leaf-file-name="pestrchinka.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pestrchinka.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="0" selection-start="3449" selection-end="3449" vertical-scroll-proportion="-30.461538">
+            <state line="25" column="83" selection-start="626" selection-end="626" vertical-scroll-proportion="-2.5384614">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cookies.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../adultcentro/site/design/js/fox/cookies.js">
+      <file leaf-file-name="presedent.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/presedent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
+            <state line="38" column="64" selection-start="1055" selection-end="1055" vertical-scroll-proportion="-23.692308">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.cookie.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../selectica/Engineering/GuidedSelling/baseline/server/guidedselling-server/guidedselling-standalone/src/main/webapp/js/libs/jquery.cookie.js">
+      <file leaf-file-name="tida-about.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tida-about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.0">
+            <state line="33" column="35" selection-start="1254" selection-end="1254" vertical-scroll-proportion="-19.461538">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screen.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/screen.css">
+      <file leaf-file-name="tida-projets.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tida-projets.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="563" column="5" selection-start="9873" selection-end="9873" vertical-scroll-proportion="0.0">
+            <state line="38" column="49" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.61346996">
               <folding />
             </state>
           </provider>
@@ -98,22 +125,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/../../selectica/Engineering/GuidedSelling/baseline/server/guidedselling-server/guidedselling-standalone/src/main/webapp/js/libs/jquery.cookie.js" />
+        <option value="$PROJECT_DIR$/ak-bars-aero.html" />
         <option value="$PROJECT_DIR$/ak-bars-holding.html" />
         <option value="$PROJECT_DIR$/alabuga.html" />
-        <option value="$PROJECT_DIR$/bkk.html" />
-        <option value="$PROJECT_DIR$/kazan-helicopters.html" />
-        <option value="$PROJECT_DIR$/tatarstan-universiada.html" />
-        <option value="$PROJECT_DIR$/kamaz.html" />
-        <option value="$PROJECT_DIR$/pestrchinka.html" />
-        <option value="$PROJECT_DIR$/gorky.html" />
-        <option value="$PROJECT_DIR$/compress.html" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/kai.html" />
-        <option value="$PROJECT_DIR$/js/common.js" />
-        <option value="$PROJECT_DIR$/css/screen.css" />
-        <option value="$PROJECT_DIR$/../../selectica/Engineering/GuidedSelling/baseline/server/guidedselling-server/guidedselling-standalone/src/main/webapp/js/libs/jquery.cookie.js" />
         <option value="$PROJECT_DIR$/alnas.html" />
+        <option value="$PROJECT_DIR$/bkk.html" />
+        <option value="$PROJECT_DIR$/compress.html" />
+        <option value="$PROJECT_DIR$/gorky.html" />
+        <option value="$PROJECT_DIR$/kai.html" />
+        <option value="$PROJECT_DIR$/kamaz.html" />
+        <option value="$PROJECT_DIR$/kazan-helicopters.html" />
         <option value="$PROJECT_DIR$/kazan-summit.html" />
+        <option value="$PROJECT_DIR$/pestrchinka.html" />
+        <option value="$PROJECT_DIR$/presedent.html" />
+        <option value="$PROJECT_DIR$/tida-about.html" />
+        <option value="$PROJECT_DIR$/tida-projets.html" />
       </list>
     </option>
   </component>
@@ -213,8 +240,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="File.Encoding" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
@@ -254,7 +281,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="833" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="833" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -355,94 +382,114 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bkk.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="3242" selection-end="3242" vertical-scroll-proportion="0.7119403" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alabuga.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="4362" selection-end="4362" vertical-scroll-proportion="0.3432836" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ak-bars-holding.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="0" selection-start="3603" selection-end="3603" vertical-scroll-proportion="0.52537316" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kamaz.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="753" selection-end="753" vertical-scroll-proportion="0.64568084" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kai.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="56" selection-start="652" selection-end="652" vertical-scroll-proportion="0.607443" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gorky.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="374" selection-end="374" vertical-scroll-proportion="0.23769508" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pestrchinka.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="50" selection-start="499" selection-end="499" vertical-scroll-proportion="0.42256904" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="45" selection-start="795" selection-end="795" vertical-scroll-proportion="0.3219512" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compress.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="59" selection-start="792" selection-end="792" vertical-scroll-proportion="0.8451381" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1046" selection-end="1054" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../adultcentro/site/design/js/fox/cookies.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../selectica/Engineering/GuidedSelling/baseline/server/guidedselling-server/guidedselling-standalone/src/main/webapp/js/libs/jquery.cookie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/screen.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="563" column="5" selection-start="9873" selection-end="9873" vertical-scroll-proportion="0.0">
+        <state line="563" column="5" selection-start="9873" selection-end="9873" vertical-scroll-proportion="0.03102962">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ak-bars-aero.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="0" selection-start="3449" selection-end="3449" vertical-scroll-proportion="-30.461538">
+        <state line="63" column="65" selection-start="2900" selection-end="2900" vertical-scroll-proportion="16.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ak-bars-holding.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="73" selection-start="3097" selection-end="3097" vertical-scroll-proportion="-44.53846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alabuga.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="73" selection-start="2668" selection-end="2668" vertical-scroll-proportion="-11.730769">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/alnas.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="0" selection-start="3306" selection-end="3306" vertical-scroll-proportion="-11.0">
+        <state line="58" column="73" selection-start="2976" selection-end="2976" vertical-scroll-proportion="-34.73077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bkk.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="65" selection-start="2539" selection-end="2539" vertical-scroll-proportion="-26.692308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compress.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="83" selection-start="804" selection-end="804" vertical-scroll-proportion="-18.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gorky.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="83" selection-start="620" selection-end="620" vertical-scroll-proportion="-10.730769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kai.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="83" selection-start="507" selection-end="507" vertical-scroll-proportion="-11.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kamaz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="83" selection-start="477" selection-end="477" vertical-scroll-proportion="-7.4615383">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kazan-helicopters.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="65" selection-start="2115" selection-end="2115" vertical-scroll-proportion="-28.76923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kazan-summit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1472" selection-end="1472" vertical-scroll-proportion="1.6746268">
+        <state line="19" column="69" selection-start="726" selection-end="726" vertical-scroll-proportion="-15.615385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pestrchinka.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="83" selection-start="626" selection-end="626" vertical-scroll-proportion="-2.5384614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presedent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="64" selection-start="1055" selection-end="1055" vertical-scroll-proportion="-23.692308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tida-about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="35" selection-start="1254" selection-end="1254" vertical-scroll-proportion="-19.461538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tida-projets.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="49" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.61346996">
           <folding />
         </state>
       </provider>
