@@ -28,15 +28,16 @@ var Desplazar = function(container, options) {
 
     this.current = 0;
 
-    $(this.slider).find('> li').each(function(idx, item) {
-        this.children.push(new Desplazar($(item), {
-            base: this,
-            direction: Desplazar.HORIZONTAL
-        }));
-    }.bind(this));
-
-    this.setup();
+    if(this.options.direction == Desplazar.VERTICAL) {
+        $(this.slider).find('> li').each(function(idx, item) {
+            this.children.push(new Desplazar($(item), {
+                base: this,
+                direction: Desplazar.HORIZONTAL
+            }));
+        }.bind(this));
+    }
     this.bind();
+    this.setup();
 };
 
 Desplazar.VERTICAL = 0;
@@ -52,6 +53,14 @@ Desplazar.Slideshow = function(container, options) {
 
     this.current = 0;
     this.totalSlides = this.slides.length;
+
+    if(this.options.direction == Desplazar.VERTICAL) {
+        $(this.slides).each(function(idx, item){
+            if($(item).hasClass('initializer')) {
+                this.slideTo(idx);
+            }
+        }.bind(this));
+    }
 };
 
 Desplazar.Slideshow.prototype = {

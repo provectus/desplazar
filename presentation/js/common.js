@@ -1,24 +1,28 @@
-var myScroll;
-function loaded() {
-//	myScroll = new iScroll('iscroll');
-}
-//document.addEventListener('DOMContentLoaded', loaded, false);
+         var toggle = function(element) {
+         };
 
-         var toggle;
-         $(function() {
+$(function() {
 
-             toggle = function() {
- 				var ele = document.getElementById("more-details");
-  			if(ele.style.display == "block") {
-                     ele.style.display = "none";
-                     app.bind();
-		    	} else {
-                     ele.style.display = "block";
-                     app.unbind();
- 				}
-  		};
+    /*toggle = function() {
+    var ele = document.getElementById("more-details");
+    if(ele.style.display == "block") {
+        ele.style.display = "none";
+        app.bind();
+    } else {
+        ele.style.display = "block";
+        app.unbind();
+    }
+    };*/
 
              //document.getElementById('content').webkitRequestFullScreen();
+
+    $('a[href^=#]').bind('click', function(evt){
+        evt.preventDefault();
+        var element = $($(this).attr('href'));
+        if(element) {
+            element.toggle();
+        }
+    });
 
             var app = new Desplazar($('#canvas'), { direction: Desplazar.VERTICAL });
 
@@ -33,12 +37,6 @@ function loaded() {
                     event.elementIsEnabled = true;
                 }
             });
-             //app.bind();
-             //new iScroll('iscroll');
-
-             //$('#canvas > ul > li').each(function(idx, item) {
-             //    new Desplazar($(item), { direction: Desplazar.HORIZONTAL });
-             //});
 	$('#publicy-held-company a').lightBox({
 		imageBtnPrev: 'assets/gallery/prev_min.png',
 		imageBtnNext: 'assets/gallery/next_min.png'
