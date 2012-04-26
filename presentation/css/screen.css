@@ -1642,3 +1642,37 @@ position: absolute;
 	top:454px;
 	cursor: hand;
 }
+.tida .slide-02 {
+	background: url('../assets/pages/tida/01.jpg') no-repeat;
+}
+.tida .slide-03 {
+	background: url('../assets/pages/tida/02.jpg') no-repeat;
+}
+.tida .slide-04 {
+	background: url('../assets/pages/tida/03.jpg') no-repeat;
+}
+.tida .slide-05 {
+	background: url('../assets/pages/tida/04.jpg') no-repeat;
+}
+.tida .slide-06 {
+	background: url('../assets/pages/tida/05.jpg') no-repeat;
+}
+.tida .slide-07 {
+	background: url('../assets/pages/tida/06.jpg') no-repeat;
+}
+.tida .slide-08 {
+	background: url('../assets/pages/tida/07.jpg') no-repeat;
+}
+.tida .slide-09 {
+	background: url('../assets/pages/tida/08.jpg') no-repeat;
+}
+.tida .slide-10 {
+	background: url('../assets/pages/tida/09.jpg') no-repeat;
+}
+.tida .slide-11 {
+	background: url('../assets/pages/tida/10.jpg') no-repeat;
+}
+.tida .slide-12 {
+	background: url('../assets/pages/tida/11.jpg') no-repeat;
+}
+
