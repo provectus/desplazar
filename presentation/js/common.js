@@ -74,7 +74,7 @@ $(function() {
         this.type = this.container.data('media');
 
         var previewNum = this.container.data('preview-num');
-        this.previewNum = parseInt(previewNum == undefined ? '2' : previewNum);
+        this.previewNum = parseInt(previewNum == undefined ? 'off' : previewNum);
 
         this.prefix = this.container.data('subdir') || '';
 
@@ -111,7 +111,7 @@ $(function() {
                 var cls = '';
                 for(var i = 1; i <= settings.count; ++i) {
 
-                    if (i > this.previewNum) {
+                    if (this.previewNum != 'off' && i > this.previewNum) {
                         cls = 'hidden';
                     }
 
