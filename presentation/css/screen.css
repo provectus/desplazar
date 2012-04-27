@@ -369,8 +369,8 @@ height:768px;
 	position: absolute;
 	background: url('../assets/controls/more-max.png') no-repeat;
 	cursor: pointer;
-	left: 268px;
-	top:564px;
+	left: 72px;
+	top: 564px;
 	}
 
 .more-text {
@@ -603,6 +603,9 @@ a.home {
 	color: #fff;
 	background: url('../assets/pages/alabuga/02.png') no-repeat;
 	}
+	.alabuga .slide-02 table {
+		color: #000;
+		}
 	.alabuga .slide-02 .text-01 {
 		top: 180px;
 		}
