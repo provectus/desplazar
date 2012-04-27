@@ -176,4 +176,12 @@ $(function() {
         });
     });
 
+    $('.gallery-wrap').each(function(idx, item){
+        if(idx) {
+            var offset = parseInt($(item).css('top'));
+            console.log(parseInt(offset))
+            $(item).css({ top: offset * (idx+1) + 20});
+        }
+    });
+
 });
