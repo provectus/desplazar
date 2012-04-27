@@ -37,17 +37,20 @@ $(function() {
 	$('a[rel="lightbox[group1]"]').lightBox({
 		imageBtnPrev: 'assets/gallery/prev-min1.png',
 		imageBtnNext: 'assets/gallery/next-min1.png',
-		imageBtnClose: 'assets/gallery/close_min.png'
+		imageBtnClose: 'assets/gallery/close_min.png',
+		imageLoading: 'assets/gallery/ajax-loader.gif'
 	});
 	$('a[rel="lightbox[group2]"]').lightBox({
 		imageBtnPrev: 'assets/gallery/prev-min1.png',
 		imageBtnNext: 'assets/gallery/next-min1.png',
-		imageBtnClose: 'assets/gallery/close_min.png'
+		imageBtnClose: 'assets/gallery/close_min.png',
+		imageLoading: 'assets/gallery/ajax-loader.gif'
 	});
 	$('a[rel="lightbox[group3]"]').lightBox({
 		imageBtnPrev: 'assets/gallery/prev-min1.png',
 		imageBtnNext: 'assets/gallery/next-min1.png',
-		imageBtnClose: 'assets/gallery/close_min.png'
+		imageBtnClose: 'assets/gallery/close_min.png',
+		imageLoading: 'assets/gallery/ajax-loader.gif'
 	});
 
 
@@ -117,6 +120,7 @@ $(function() {
 		                        imageBtnPrev: 'assets/gallery/prev-min1.png',
                         		imageBtnNext: 'assets/gallery/next-min1.png',
                         		imageBtnClose: 'assets/gallery/close_min.png',
+								imageLoading: 'assets/gallery/ajax-loader.gif',
                                 media: this.type
                         	})
                         )
