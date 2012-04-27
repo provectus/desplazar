@@ -855,6 +855,16 @@ a.home {
 .tatarstan-universiada.initializer {
 	height:768px !important;
 }
+
+.tatarstan-universiada .slide-0 .link {
+	display: block;
+	position: absolute;
+	text-decoration: none;
+	width: 230px;
+	height: 69px;
+	top: 60px;
+	left: 46px; }
+
 /** 01 **/
 .tatarstan-universiada .slide-01 {
 	background: url('../assets/pages/tatarstan-universiada/01.png') no-repeat;
