@@ -57,7 +57,9 @@ $(function() {
     var Media = function(container, options) {
         var defaults = {
             basepath: '/public',
-            success: function() {}
+            success: function() {
+                console.log('success');
+            }
         };
 
         this.options = $.extend({}, defaults, options);
@@ -65,7 +67,9 @@ $(function() {
         this.container = $(container);
 
         this.type = this.container.data('media');
-        this.previewNum = parseInt(this.container.data('preview-num') || '2');
+
+        var previewNum = this.container.data('preview-num');
+        this.previewNum = parseInt(previewNum == undefined ? '2' : previewNum);
 
         this.prefix = this.container.data('subdir') || '';
 
@@ -106,6 +110,8 @@ $(function() {
                     if (i >= this.previewNum) {
                         cls = 'hidden';
                     }
+
+                    console.log(this.prefix, i, this.previewNum);
 
                     this.container.append(
                         $('<div>').attr({ class: 'gallery-item video ' + cls }).append(
@@ -152,7 +158,10 @@ $(function() {
     $('[data-media]').each(function(idx, element){
         new Media(element, {
             success: function(container) {
-                var clicker = container.data('clicker') || '';
+                var clicker = $(container).data('click');
+
+                console.log(container);
+
                 if(clicker) {
                     var element = container.find('a').first();
                     $(document.getElementById(clicker)).bind('click', function(evt){
