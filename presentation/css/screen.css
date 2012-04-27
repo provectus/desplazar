@@ -1232,122 +1232,42 @@ top:574px;
 	}
 /** 07 **/
 .presedent .slide-07 {
-	background: url('../assets/pages/presedent/07.png') no-repeat;
-	color: #fff;
-	}
-	.presedent .slide-07 .home {
-		display: block;
-		position: absolute;
-		bottom: 30px;
-		right: 40px;
-		width: 37px;
-		height: 31px;
-		background: url('../assets/controls/home.png') no-repeat;
-	}
-/** 08 **/
+	background: url('../assets/pages/presedent/07.png') no-repeat; }
+
 .presedent .slide-08 {
-	background: url('../assets/pages/presedent/08.png') no-repeat;
-	color: #fff;
-	}
-	.presedent .slide-08 .home {
-		display: block;
-		position: absolute;
-		bottom: 30px;
-		right: 40px;
-		width: 37px;
-		height: 31px;
-		background: url('../assets/controls/home.png') no-repeat;
-	}
-/** 09 **/
+	background: url('../assets/pages/presedent/08.png') no-repeat; }
+
 .presedent .slide-09 {
-	background: url('../assets/pages/presedent/09.png') no-repeat;
-	color: #fff;
-	}
-	.presedent .slide-09 .home {
-		display: block;
-		position: absolute;
-		bottom: 30px;
-		right: 40px;
-		width: 37px;
-		height: 31px;
-		background: url('../assets/controls/home.png') no-repeat;
-	}
-/** 10 **/
+	background: url('../assets/pages/presedent/09.png') no-repeat; }
+
 .presedent .slide-10 {
-	background: url('../assets/pages/presedent/10.png') no-repeat;
-	color: #fff;
-	}
-	.presedent .slide-10 .home {
-		display: block;
-		position: absolute;
-		bottom: 30px;
-		right: 40px;
-		width: 37px;
-		height: 31px;
-		background: url('../assets/controls/home.png') no-repeat;
-	}
-/** 11 **/
+	background: url('../assets/pages/presedent/10.png') no-repeat; }
+
 .presedent .slide-11 {
-	background: url('../assets/pages/presedent/11.png') no-repeat;
-	color: #fff;
-	}
-	.presedent .slide-11 .home {
-		display: block;
-		position: absolute;
-		bottom: 30px;
-		right: 40px;
-		width: 37px;
-		height: 31px;
-		background: url('../assets/controls/home.png') no-repeat;
-	}
-/** 12 **/
+	background: url('../assets/pages/presedent/11.png') no-repeat; }
+
 .presedent .slide-12 {
-	background: url('../assets/pages/presedent/12.png') no-repeat;
-	color: #fff;
-	}
-	.presedent .slide-12 .home {
-		display: block;
-		position: absolute;
-		bottom: 30px;
-		right: 40px;
-		width: 37px;
-		height: 31px;
-		background: url('../assets/controls/home.png') no-repeat;
-	}
-/** 13 **/
+	background: url('../assets/pages/presedent/12.png') no-repeat; }
+
 .presedent .slide-13 {
-	background: url('../assets/pages/presedent/13.png') no-repeat;
-	color: #fff;
-	}
-	.presedent .slide-13 .home {
-		display: block;
-		position: absolute;
-		bottom: 30px;
-		right: 40px;
-		width: 37px;
-		height: 31px;
-		background: url('../assets/controls/home.png') no-repeat;
-	}
-	/** 14 **/
+	background: url('../assets/pages/presedent/13.png') no-repeat; }
+
 .presedent .slide-14 {
-	background: url('../assets/pages/presedent/14.png') no-repeat;
-	color: #fff;
-	}
-	.presedent .slide-14 .home {
-		display: block;
-		position: absolute;
-		bottom: 30px;
-		right: 40px;
-		width: 37px;
-		height: 31px;
-		background: url('../assets/controls/home.png') no-repeat;
-	}
-	/** 10 **/
+	background: url('../assets/pages/presedent/14.png') no-repeat; }
+
 .presedent .slide-15 {
-	background: url('../assets/pages/presedent/15.png') no-repeat;
-	color: #fff;
-	}
-	.presedent .slide-15 .home {
+	background: url('../assets/pages/presedent/15.png') no-repeat; }
+
+.presedent .slide-16 {
+	background: url('../assets/pages/presedent/16.png') no-repeat; }
+
+.presedent .slide-17 {
+	background: url('../assets/pages/presedent/17.png') no-repeat; }
+
+.presedent .slide-18 {
+	background: url('../assets/pages/presedent/18.png') no-repeat; }
+
+.presedent .home {
 		display: block;
 		position: absolute;
 		bottom: 30px;
