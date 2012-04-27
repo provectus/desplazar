@@ -87,6 +87,25 @@
 	display: block;
 	line-height:1.1;
 }
+
+
+.button {
+    display: block;
+    width: 240px;
+    height: 120px;
+    position: absolute;
+}
+
+#bkk-open-presentation {
+    top: 550px;
+    left: 70px;
+}
+
+#bkk-open-video {
+    top: 550px;
+    left: 360px;
+}
+
 #main .navigation div,
 #main2 .navigation div {
 	padding-left:0;
@@ -225,12 +244,8 @@
 	height: 31px;
 	}
 	.gallery-wrap{
-		position:absolute;
-		top:230px;
-		left:230px;
 		width:766px;
-		height:476px;
-		overflow:auto;
+		overflow:hidden;
 		}
 		.gallery-wrap .gallery-item{
 			float:left;
