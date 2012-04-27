@@ -21,6 +21,13 @@ $(function() {
 
     var app = new Desplazar($('#canvas'), { direction: Desplazar.VERTICAL });
 
+    $(document)
+        .on('click', '.horizontal-next-slide', function(e){
+            app.slideshow.slideTo(1, 0); })
+
+        .on('click', '.vertical-prev-slide', function(e){ app.slideshow.prev(); })
+        .on('click', '.vertical-next-slide', function(e){ app.slideshow.next(); });
+
     document.ontouchmove = function (event) {
         if (!event.elementIsEnabled) {
             event.preventDefault();
