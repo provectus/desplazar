@@ -115,8 +115,6 @@ $(function() {
                         cls = 'hidden';
                     }
 
-                    console.log(this.prefix, i, this.previewNum);
-
                     this.container.append(
                         $('<div>').attr({ class: 'gallery-item video ' + cls }).append(
                             $('<a>').attr({
@@ -165,7 +163,7 @@ $(function() {
                     })
                 }
 
-                if(this.type == 'links') return;
+                if(this.type == 'link') return;
 
                 $(container).find('a').lightBox({
             		imageBtnPrev: 'assets/gallery/prev-min1.png',
