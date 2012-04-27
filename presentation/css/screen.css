@@ -674,6 +674,9 @@ a.home {
 	color: #fff;
 	background: url('../assets/pages/bkk/02.png') no-repeat;
 	}
+	.bkk .slide-02 .more-min {
+		top: 565px;
+		}
 	.bkk .slide-02 .title {
 		letter-spacing: -2px;
 		}
