@@ -176,12 +176,13 @@ $(function() {
         });
     });
 
-    $('.gallery-wrap').each(function(idx, item){
-        if(idx) {
-            var offset = parseInt($(item).css('top'));
-            console.log(parseInt(offset))
-            $(item).css({ top: offset * (idx+1) + 20});
-        }
+    $('#canvas > ul > li > ul > li').each(function() {
+        $(this).find('.gallery-wrap').each(function(idx, item){
+            if(idx) {
+                var offset = parseInt($(item).css('top'));
+                $(item).css({ top: offset * (idx+1) + 20});
+            }
+        })
     });
 
 });
