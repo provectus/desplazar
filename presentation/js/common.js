@@ -54,6 +54,7 @@ $(function() {
     var Media = function(container, options) {
         var defaults = {
             basepath: '/public',
+            success: function() {}
         };
 
         this.options = $.extend({}, defaults, options);
@@ -66,7 +67,19 @@ $(function() {
         this.prefix = this.container.data('subdir') || '';
 
         this.subdir = this.parsePathname(document.location.pathname);
-        this.ext = this.type == 'photos' || this.type == 'present' ? '.jpg' : '.mp4';
+
+        switch(this.type) {
+            case 'photos':
+            case 'present':
+                this.ext = '.jpg';
+            break;
+            case 'videos':
+                this.ext = '.mp4';
+            break;
+            case 'links':
+                this.ext = '.pdf';
+            break;
+        }
 
         this.drawGallery();
     };
@@ -109,7 +122,7 @@ $(function() {
                         )
                     );
                 }
-
+                this.options.success.apply(this, [this.container]);
             }.bind(this));
         },
 
@@ -133,7 +146,18 @@ $(function() {
     };
 
     $('[data-media]').each(function(idx, element){
-        new Media(element);
+        new Media(element, {
+            success: function(container) {
+                var clicker = container.data('clicker') || '';
+                if(clicker) {
+                    var element = container.find('a').first();
+                    $(document.getElementById(clicker)).bind('click', function(evt){
+                        evt.preventDefault();
+                        element.click();
+                    })
+                }
+            }
+        });
     });
 
 });
