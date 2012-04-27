@@ -25,7 +25,7 @@
       <file leaf-file-name="compress.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/compress.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="77" selection-start="2700" selection-end="2700" vertical-scroll-proportion="-22.0">
+            <state line="50" column="77" selection-start="2746" selection-end="2746" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -34,16 +34,16 @@
       <file leaf-file-name="ak-bars-holding.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ak-bars-holding.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="0" selection-start="3123" selection-end="3123" vertical-scroll-proportion="-15.230769">
+            <state line="58" column="0" selection-start="3112" selection-end="3112" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bkk.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="bkk.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bkk.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="65" selection-start="2532" selection-end="2540" vertical-scroll-proportion="-16.615385">
+            <state line="37" column="267" selection-start="2032" selection-end="2032" vertical-scroll-proportion="0.44">
               <folding />
             </state>
           </provider>
@@ -61,7 +61,7 @@
       <file leaf-file-name="kai.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kai.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="38" selection-start="381" selection-end="8076" vertical-scroll-proportion="-17.76923">
+            <state line="109" column="56" selection-start="8630" selection-end="8630" vertical-scroll-proportion="-14.384615">
               <folding />
             </state>
           </provider>
@@ -70,7 +70,7 @@
       <file leaf-file-name="kamaz.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kamaz.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="155" column="140" selection-start="21073" selection-end="21073" vertical-scroll-proportion="-22.538462">
+            <state line="155" column="113" selection-start="21070" selection-end="21070" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -79,7 +79,7 @@
       <file leaf-file-name="pestrchinka.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pestrchinka.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="38" selection-start="608" selection-end="4902" vertical-scroll-proportion="-22.538462">
+            <state line="21" column="89" selection-start="651" selection-end="651" vertical-scroll-proportion="-17.76923">
               <folding />
             </state>
           </provider>
@@ -88,7 +88,7 @@
       <file leaf-file-name="alabuga.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/alabuga.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="160" column="34" selection-start="8538" selection-end="11651" vertical-scroll-proportion="-56.26923">
+            <state line="160" column="34" selection-start="8538" selection-end="11651" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -97,16 +97,16 @@
       <file leaf-file-name="alnas.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/alnas.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="24" selection-start="1567" selection-end="1567" vertical-scroll-proportion="-9.307693">
+            <state line="42" column="24" selection-start="1608" selection-end="1608" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kazan-helicopters.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="kazan-helicopters.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kazan-helicopters.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="63" selection-start="2054" selection-end="2054" vertical-scroll-proportion="0.5176471">
+            <state line="45" column="63" selection-start="2062" selection-end="2062" vertical-scroll-proportion="-0.84615386">
               <folding />
             </state>
           </provider>
@@ -135,12 +135,12 @@
         <option value="$PROJECT_DIR$/tida-projets.html" />
         <option value="$PROJECT_DIR$/alabuga.html" />
         <option value="$PROJECT_DIR$/compress.html" />
-        <option value="$PROJECT_DIR$/bkk.html" />
         <option value="$PROJECT_DIR$/css/screen.css" />
-        <option value="$PROJECT_DIR$/kai.html" />
         <option value="$PROJECT_DIR$/kamaz.html" />
-        <option value="$PROJECT_DIR$/pestrchinka.html" />
         <option value="$PROJECT_DIR$/kazan-helicopters.html" />
+        <option value="$PROJECT_DIR$/kai.html" />
+        <option value="$PROJECT_DIR$/pestrchinka.html" />
+        <option value="$PROJECT_DIR$/bkk.html" />
       </list>
     </option>
   </component>
@@ -175,6 +175,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -223,16 +233,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -240,8 +240,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="editing.templates" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
@@ -426,21 +426,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/compress.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="77" selection-start="2700" selection-end="2700" vertical-scroll-proportion="-22.0">
+        <state line="50" column="77" selection-start="2746" selection-end="2746" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ak-bars-holding.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="3123" selection-end="3123" vertical-scroll-proportion="-15.230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bkk.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="65" selection-start="2532" selection-end="2540" vertical-scroll-proportion="-16.615385">
+        <state line="58" column="0" selection-start="3112" selection-end="3112" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -452,44 +445,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kai.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="38" selection-start="381" selection-end="8076" vertical-scroll-proportion="-17.76923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kamaz.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="140" selection-start="21073" selection-end="21073" vertical-scroll-proportion="-22.538462">
+        <state line="155" column="113" selection-start="21070" selection-end="21070" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/alabuga.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="34" selection-start="8538" selection-end="11651" vertical-scroll-proportion="-56.26923">
+        <state line="160" column="34" selection-start="8538" selection-end="11651" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/alnas.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="24" selection-start="1567" selection-end="1567" vertical-scroll-proportion="-9.307693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pestrchinka.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="38" selection-start="608" selection-end="4902" vertical-scroll-proportion="-22.538462">
+        <state line="42" column="24" selection-start="1608" selection-end="1608" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kazan-helicopters.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="63" selection-start="2054" selection-end="2054" vertical-scroll-proportion="0.5176471">
+        <state line="45" column="63" selection-start="2062" selection-end="2062" vertical-scroll-proportion="-0.84615386">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kai.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="56" selection-start="8630" selection-end="8630" vertical-scroll-proportion="-14.384615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pestrchinka.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="89" selection-start="651" selection-end="651" vertical-scroll-proportion="-17.76923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bkk.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="267" selection-start="2032" selection-end="2032" vertical-scroll-proportion="0.44">
           <folding />
         </state>
       </provider>

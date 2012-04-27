@@ -115,8 +115,6 @@ $(function() {
                         cls = 'hidden';
                     }
 
-                    console.log(this.prefix, i, this.previewNum);
-
                     this.container.append(
                         $('<div>').attr({ class: 'gallery-item video ' + cls }).append(
                             $('<a>').attr({
@@ -165,13 +163,14 @@ $(function() {
                     })
                 }
 
-                if(this.type == 'links') return;
+                if(this.type == 'link') return;
 
                 $(container).find('a').lightBox({
             		imageBtnPrev: 'assets/gallery/prev-min1.png',
             		imageBtnNext: 'assets/gallery/next-min1.png',
             		imageBtnClose: 'assets/gallery/close_min.png',
-            		imageLoading: 'assets/gallery/ajax-loader.gif'
+            		imageLoading: 'assets/gallery/ajax-loader.gif',
+                    media: $(container).data('media')
             	});
             }
         });

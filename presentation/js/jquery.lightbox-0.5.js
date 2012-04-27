@@ -44,7 +44,7 @@
 			keyToNext:				'n',		// (string) (n = next) Letter to show the next image.
 			// Don´t alter these variables in any way
 			imageArray:				[],
-			activeImage:			0
+			activeImage:			0,
 		},settings);
 		// Caching the jQuery object with all elements matched
 		var jQueryMatchedObj = this; // This, in this context, refer to jQuery object
@@ -126,9 +126,10 @@
 
         function _build_tag() {
             var tag = '';
-            switch(settings.media) {
-                case 'photos': tag = '<img id="lightbox-image">'; break;
-                case 'videos': tag = '<video id="lightbox-image" autoplay></video>'; break; //<source src="movie.mp4" type="video/mp4"></video>'
+            if(settings.media == 'video') {
+                tag = '<video id="lightbox-image" autoplay></video>';
+            } else {
+                tag = '<img id="lightbox-image">';
             }
             return tag;
         }
@@ -193,7 +194,12 @@
 				$('#lightbox-image,#lightbox-nav,#lightbox-nav-btnPrev,#lightbox-nav-btnNext,#lightbox-container-image-data-box,#lightbox-image-details-currentNumber').hide();
 			}
 			// Image preload process
-            if(settings.media == 'photos' || settings.media == 'present') {
+            if(settings.media == 'videos') {
+                $('#lightbox-image').html(
+                    $('<source>').attr({ src: settings.imageArray[settings.activeImage][0], type: 'video/mp4' })
+                );
+                _resize_container_image_box('100%', '100%'); 
+            } else {
     			var objImagePreloader = new Image();
 	    		objImagePreloader.onload = function() {
 		    		$('#lightbox-image').attr('src', settings.imageArray[settings.activeImage][0]);
@@ -203,11 +209,6 @@
 	    			objImagePreloader.onload=function(){};
 		    	};
 			    objImagePreloader.src = settings.imageArray[settings.activeImage][0];
-            } else {
-                $('#lightbox-image').html(
-                    $('<source>').attr({ src: settings.imageArray[settings.activeImage][0], type: 'video/mp4' })
-                );
-                _resize_container_image_box('100%', '100%');
             }
 		};
 		/**
