@@ -87,7 +87,7 @@ $(function() {
             case 'videos':
                 this.ext = '.mp4';
             break;
-            case 'links':
+            case 'link':
                 this.ext = '.pdf';
             break;
         }
