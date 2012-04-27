@@ -1042,6 +1042,20 @@ top:574px;
 	background: url('../assets/pages/kamaz/04.png') no-repeat;
 	}
 
+/** GORKY **/
+/** 01 **/
+.gorky .slide-01 {
+	background: url('../assets/pages/gorky/01.png') no-repeat;
+	}
+/** 02 **/
+.gorky .slide-02 {
+	background: url('../assets/pages/gorky/02.png') no-repeat;
+	}
+/** 02 **/
+.gorky .slide-03 {
+	background: url('../assets/pages/gorky/03.png') no-repeat;
+	}
+
 /** PESTRCHINLKA **/
 /** 01 **/
 .pestrchinka .slide-01 {
@@ -1244,14 +1258,14 @@ top:574px;
 position: absolute;
 	left:51px;
 	top:323px;
-	cursor: hand;
+	cursor: pointer;
 }
 .casansummitx {
 	background:  url('../assets/pages/tida/controls/kazansummit.png') no-repeat;
 position: absolute;
 	left:51px;
 	top:454px;
-	cursor: hand;
+	cursor: pointer;
 }
 .tida .slide-02 {
 	background: url('../assets/pages/tida/01.jpg') no-repeat;
