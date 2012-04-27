@@ -37,23 +37,29 @@ $(function() {
 	$('a[rel="lightbox[group1]"]').lightBox({
 		imageBtnPrev: 'assets/gallery/prev-min1.png',
 		imageBtnNext: 'assets/gallery/next-min1.png',
-		imageBtnClose: 'assets/gallery/close_min.png'
+		imageBtnClose: 'assets/gallery/close_min.png',
+		imageLoading: 'assets/gallery/ajax-loader.gif'
 	});
 	$('a[rel="lightbox[group2]"]').lightBox({
 		imageBtnPrev: 'assets/gallery/prev-min1.png',
 		imageBtnNext: 'assets/gallery/next-min1.png',
-		imageBtnClose: 'assets/gallery/close_min.png'
+		imageBtnClose: 'assets/gallery/close_min.png',
+		imageLoading: 'assets/gallery/ajax-loader.gif'
 	});
 	$('a[rel="lightbox[group3]"]').lightBox({
 		imageBtnPrev: 'assets/gallery/prev-min1.png',
 		imageBtnNext: 'assets/gallery/next-min1.png',
-		imageBtnClose: 'assets/gallery/close_min.png'
+		imageBtnClose: 'assets/gallery/close_min.png',
+		imageLoading: 'assets/gallery/ajax-loader.gif'
 	});
 
 
     var Media = function(container, options) {
         var defaults = {
             basepath: '/public',
+            success: function() {
+                console.log('success');
+            }
         };
 
         this.options = $.extend({}, defaults, options);
@@ -61,8 +67,26 @@ $(function() {
         this.container = $(container);
 
         this.type = this.container.data('media');
+
+        var previewNum = this.container.data('preview-num');
+        this.previewNum = parseInt(previewNum == undefined ? '2' : previewNum);
+
+        this.prefix = this.container.data('subdir') || '';
+
         this.subdir = this.parsePathname(document.location.pathname);
-        this.ext = this.type == 'photos' ? '.jpg' : '.mp4';
+
+        switch(this.type) {
+            case 'photos':
+            case 'present':
+                this.ext = '.jpg';
+            break;
+            case 'videos':
+                this.ext = '.mp4';
+            break;
+            case 'links':
+                this.ext = '.pdf';
+            break;
+        }
 
         this.drawGallery();
     };
@@ -78,17 +102,19 @@ $(function() {
 
         drawGallery: function() {
             this.getSettings(function(settings) {
-                var group = 'lightbox[' + this.subdir + this.type + ']';
+                var group = 'lightbox[' + this.subdir + this.prefix + this.type + ']';
                 var path = this.buildMediaPath();
                 var cls = '';
                 for(var i = 0; i < settings.count; ++i) {
 
-                    if (i >= 2) {
+                    if (i >= this.previewNum) {
                         cls = 'hidden';
                     }
 
+                    console.log(this.prefix, i, this.previewNum);
+
                     this.container.append(
-                        $('<div>').attr({ class: 'gallery-item video' }).addClass(cls).append(
+                        $('<div>').attr({ class: 'gallery-item video ' + cls }).append(
                             $('<a>').attr({
                                 href: path + '/' + i + this.ext,
                                 rel: group
@@ -100,12 +126,13 @@ $(function() {
 		                        imageBtnPrev: 'assets/gallery/prev-min1.png',
                         		imageBtnNext: 'assets/gallery/next-min1.png',
                         		imageBtnClose: 'assets/gallery/close_min.png',
+								imageLoading: 'assets/gallery/ajax-loader.gif',
                                 media: this.type
                         	})
                         )
                     );
                 }
-
+                this.options.success.apply(this, [this.container]);
             }.bind(this));
         },
 
@@ -114,16 +141,36 @@ $(function() {
         },
 
         buildMediaPath: function() {
-            return [
+            var path = [
                 this.options.basepath,
                 this.type,
-                this.subdir
-            ].join('/');
+                this.subdir,
+            ];
+
+            if(this.prefix) {
+                path.push(this.prefix);
+            }
+
+            return path.join('/');
         }
     };
 
     $('[data-media]').each(function(idx, element){
-        new Media(element);
+        new Media(element, {
+            success: function(container) {
+                var clicker = $(container).data('click');
+
+                console.log(container);
+
+                if(clicker) {
+                    var element = container.find('a').first();
+                    $(document.getElementById(clicker)).bind('click', function(evt){
+                        evt.preventDefault();
+                        element.click();
+                    })
+                }
+            }
+        });
     });
 
 });
