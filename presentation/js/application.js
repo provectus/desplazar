@@ -138,7 +138,8 @@ Desplazar.prototype = {
     },
 
     slideTo: function(x, y) {
-        this.children[x].slideTo(y);
+        this.slideshow.slideTo(x);
+        this.children[x].slideshow.slideTo(y);
     },
 
     setup: function() {
