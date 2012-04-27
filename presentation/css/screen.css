@@ -1218,45 +1218,7 @@ top:574px;
 		height: 31px;
 		background: url('../assets/controls/home.png') no-repeat;
 	}
-.presedent .slide-16 {
-	background: url('../assets/pages/presedent/16.png') no-repeat;
-	color: #fff;
-	}
-	.presedent .slide-16 .home {
-		display: block;
-		position: absolute;
-		bottom: 30px;
-		right: 40px;
-		width: 37px;
-		height: 31px;
-		background: url('../assets/controls/home.png') no-repeat;
-	}
-.presedent .slide-17 {
-	background: url('../assets/pages/presedent/17.png') no-repeat;
-	color: #fff;
-	}
-	.presedent .slide-17 .home {
-		display: block;
-		position: absolute;
-		bottom: 30px;
-		right: 40px;
-		width: 37px;
-		height: 31px;
-		background: url('../assets/controls/home.png') no-repeat;
-	}
-.presedent .slide-18 {
-	background: url('../assets/pages/presedent/18.png') no-repeat;
-	color: #fff;
-	}
-	.presedent .slide-18 .home {
-		display: block;
-		position: absolute;
-		bottom: 30px;
-		right: 40px;
-		width: 37px;
-		height: 31px;
-		background: url('../assets/controls/home.png') no-repeat;
-	}
+
 /** TIDA **/
 .tida {
 
