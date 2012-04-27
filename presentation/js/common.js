@@ -23,7 +23,7 @@ $(function() {
 
     $(document)
         .on('click', '.horizontal-next-slide', function(e){
-            app.slideshow.slideTo(1, 0); })
+            app.slideTos(1, 0); })
 
         .on('click', '.vertical-prev-slide', function(e){ app.slideshow.prev(); })
         .on('click', '.vertical-next-slide', function(e){ app.slideshow.next(); });

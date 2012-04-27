@@ -137,10 +137,6 @@ Desplazar.prototype = {
         return this.current;
     },
 
-    slideTo: function(x, y) {
-        this.children[x].slideTo(y);
-    },
-
     setup: function() {
         var defaults = {
             height: this.height,
