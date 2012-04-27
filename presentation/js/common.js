@@ -171,7 +171,6 @@ $(function() {
                 }
 
                 $(container).find('a').lightBox({
-                    fixedNavigation: true,
             		imageBtnPrev: 'assets/gallery/prev-min1.png',
             		imageBtnNext: 'assets/gallery/next-min1.png',
             		imageBtnClose: 'assets/gallery/close_min.png',
