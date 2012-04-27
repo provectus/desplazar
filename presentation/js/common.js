@@ -84,7 +84,6 @@ $(function() {
 
         switch(this.type) {
             case 'photos':
-            case 'present':
                 this.ext = '.jpg';
             break;
             case 'videos':
@@ -129,13 +128,7 @@ $(function() {
                                 $('<img>').attr({
                                     src: path + '/' + i + '_thumb' + '.jpg'
                                 })
-                            )/*.lightBox({
-		                        imageBtnPrev: 'assets/gallery/prev-min1.png',
-                        		imageBtnNext: 'assets/gallery/next-min1.png',
-                        		imageBtnClose: 'assets/gallery/close_min.png',
-								imageLoading: 'assets/gallery/ajax-loader.gif',
-                                media: this.type
-                        	})*/
+                            )
                         )
                     );
                 }
@@ -166,9 +159,6 @@ $(function() {
         new Media(element, {
             success: function(container) {
                 var clicker = $(container).data('click');
-
-                //console.log(container);
-
                 if(clicker) {
                     var element = container.find('a').first();
                     $(document.getElementById(clicker)).bind('click', function(evt){
@@ -176,6 +166,8 @@ $(function() {
                         element.click();
                     })
                 }
+
+                if(this.type == 'links') return;
 
                 $(container).find('a').lightBox({
             		imageBtnPrev: 'assets/gallery/prev-min1.png',
