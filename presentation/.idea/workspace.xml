@@ -22,28 +22,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="gorky.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gorky.html">
+      <file leaf-file-name="compress.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/compress.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="41" selection-start="307" selection-end="312" vertical-scroll-proportion="-5.076923">
+            <state line="50" column="77" selection-start="2700" selection-end="2700" vertical-scroll-proportion="0.67294115">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alabuga.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="alabuga.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/alabuga.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="64" selection-start="8817" selection-end="8817" vertical-scroll-proportion="0.7152941">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="screen.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/screen.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="606" column="20" selection-start="10715" selection-end="10715" vertical-scroll-proportion="0.0">
+            <state line="118" column="32" selection-start="8538" selection-end="8585" vertical-scroll-proportion="-13.961538">
               <folding />
             </state>
           </provider>
@@ -66,7 +57,6 @@
         <option value="$PROJECT_DIR$/ak-bars-holding.html" />
         <option value="$PROJECT_DIR$/alnas.html" />
         <option value="$PROJECT_DIR$/bkk.html" />
-        <option value="$PROJECT_DIR$/compress.html" />
         <option value="$PROJECT_DIR$/gorky.html" />
         <option value="$PROJECT_DIR$/kai.html" />
         <option value="$PROJECT_DIR$/kamaz.html" />
@@ -78,6 +68,7 @@
         <option value="$PROJECT_DIR$/tida-projets.html" />
         <option value="$PROJECT_DIR$/css/screen.css" />
         <option value="$PROJECT_DIR$/alabuga.html" />
+        <option value="$PROJECT_DIR$/compress.html" />
       </list>
     </option>
   </component>
@@ -396,13 +387,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/compress.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="872" selection-end="872" vertical-scroll-proportion="0.032210834">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="57" selection-start="1891" selection-end="1891" vertical-scroll-proportion="0.45970148">
@@ -412,21 +396,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gorky.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="41" selection-start="307" selection-end="312" vertical-scroll-proportion="-5.076923">
+        <state line="10" column="41" selection-start="307" selection-end="312" vertical-scroll-proportion="0.1529548">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/screen.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="606" column="20" selection-start="10715" selection-end="10715" vertical-scroll-proportion="0.0">
+        <state line="606" column="20" selection-start="10715" selection-end="10715" vertical-scroll-proportion="0.7862767">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/alabuga.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="64" selection-start="8817" selection-end="8817" vertical-scroll-proportion="0.7152941">
+        <state line="118" column="32" selection-start="8538" selection-end="8585" vertical-scroll-proportion="-13.961538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compress.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="77" selection-start="2700" selection-end="2700" vertical-scroll-proportion="0.67294115">
           <folding />
         </state>
       </provider>
