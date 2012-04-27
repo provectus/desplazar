@@ -169,7 +169,8 @@ $(function() {
             		imageBtnPrev: 'assets/gallery/prev-min1.png',
             		imageBtnNext: 'assets/gallery/next-min1.png',
             		imageBtnClose: 'assets/gallery/close_min.png',
-            		imageLoading: 'assets/gallery/ajax-loader.gif'
+            		imageLoading: 'assets/gallery/ajax-loader.gif',
+                    media: $(container).data('media')
             	});
             }
         });

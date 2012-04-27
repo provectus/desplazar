@@ -126,7 +126,10 @@
 
         function _build_tag() {
             var tag = '';
-            if(settings.media == 'video') {
+
+            console.log(settings.media);
+
+            if(settings.media == 'videos') {
                 tag = '<video id="lightbox-image" autoplay></video>';
             } else {
                 tag = '<img id="lightbox-image">';
