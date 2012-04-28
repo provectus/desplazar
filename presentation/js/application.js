@@ -55,8 +55,9 @@ Desplazar.Slideshow = function(container, options) {
     this.totalSlides = this.slides.length;
 
     if(this.options.direction == Desplazar.VERTICAL) {
+        var slideNum = document.location.hash.substr(-1);
         $(this.slides).each(function(idx, item){
-            if($(item).hasClass('initializer')) {
+            if((slideNum && parseInt(slideNum) == idx) || (!slideNum && idx == 1)) {
                 this.slideTo(idx);
             }
         }.bind(this));
