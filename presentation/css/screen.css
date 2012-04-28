@@ -401,6 +401,10 @@ width:950px;
 	background-color: #000;
     z-index: 1000;
 }
+
+.more-text h2 {
+	font-family: DINPro-Regular; }
+
 .closebtn {
 	position: absolute;
 	height:52px;
@@ -1097,10 +1101,19 @@ top:574px;
 .gorky .slide-02 {
 	background: url('../assets/pages/gorky/02.png') no-repeat;
 	}
+
+.gorky .rasp-ico{
+	width: 83px;
+	height: 83px;
+	position: absolute;
+	left: 62px;
+	top: 543px;	}
 /** 02 **/
 .gorky .slide-03 {
 	background: url('../assets/pages/gorky/03.png') no-repeat;
 	}
+
+
 
 /** PESTRCHINLKA **/
 /** 01 **/
