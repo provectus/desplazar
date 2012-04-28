@@ -371,8 +371,8 @@ width:950px;
 
 .hand-min {
 	position: absolute;
-	bottom: 35px;
-	right: 50px;
+	bottom: 30px;
+	right: 30px;
 	width: 95px;
 	height: 76px;
 	background: url('../assets/controls/hand_min.png') no-repeat;
