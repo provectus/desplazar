@@ -63,7 +63,7 @@
 #lightbox-nav a { outline: none;}
 #lightbox-nav-btnPrev,#lightbox-nav-btnNext  {
 	width: 39%;
-	height: 100%;
+	height: 670px !important;
 	zoom: 1;
 	display: block;
 	bottom:-80px;
