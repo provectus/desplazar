@@ -3,6 +3,9 @@
     padding: 0;
 	}
 
+body {
+	background-color: #000; }
+
 @font-face {
 	font-family: 'DINPro-Regular';
 	src: url('../fonts/DINPro-Regular.eot');
@@ -368,7 +371,7 @@ width:950px;
 
 .hand-min {
 	position: absolute;
-	bottom: 115px;
+	bottom: 35px;
 	right: 50px;
 	width: 95px;
 	height: 76px;
