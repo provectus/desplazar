@@ -20,6 +20,9 @@ $(function() {
     });
 
     var app = new Desplazar($('#canvas'), { direction: Desplazar.VERTICAL });
+    if(document.location.pathname == '/') {
+        app.enable()
+    }
 
     $(document)
         .on('click', '.horizontal-next-slide', function(e){ app.slideTo(1,1); })

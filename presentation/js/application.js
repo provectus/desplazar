@@ -9,7 +9,8 @@ var Desplazar = function(container, options) {
 
     var defaults = {
         base: this,
-        direction: Desplazar.VERTICAL
+        direction: Desplazar.VERTICAL,
+        disabled: 'vertical'
     };
 
     this.options = $.extend({}, defaults, options);
@@ -129,6 +130,10 @@ Desplazar.Dummy.prototype = {
 
 Desplazar.prototype = {
 
+    enable: function() {
+        this.options.disabled = '';
+    },
+
     setCurrent: function(value) {
         console.log('setting current: ', value);
         this.current = value;
@@ -171,7 +176,7 @@ Desplazar.prototype = {
         var left = 0,
             top = 0;
 
-        if(this.options.direction == Desplazar.VERTICAL && this.base.getCurrent() == 0) {
+        if(this.options.direction == Desplazar.VERTICAL && this.base.getCurrent() == 0 && (!this.options.disabled || this.options.disabled != 'vertical')) {
             if(ev.direction == 'up') {
                 top = 0 - ev.distance;
             } else if(ev.direction == 'down') {
