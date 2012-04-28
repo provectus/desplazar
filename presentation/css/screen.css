@@ -1191,42 +1191,22 @@ top:574px;
 
 
 /** KAI **/
-/** 01 **/
 .kai .slide-01 {
-	background: url('../assets/pages/kai/01.png') no-repeat;
-	}
-	.kai .slide-01 .more {
-		width: 82px;
-		height: 82px;
-		position: absolute;
-		top: 371px;
-		left: 70px;
-		cursor: pointer;
-		}
-/** 02 **/
+	background: url('../assets/pages/kai/01.png') no-repeat; }
+
 .kai .slide-02 {
-	background: url('../assets/pages/kai/02.png') no-repeat;
-	}
-	.kai .slide-02 .more {
-		width: 82px;
-		height: 82px;
-		position: absolute;
-		top: 205px;
-		left: 80px;
-		cursor: pointer;
-		}
-/** 03 **/
+	background: url('../assets/pages/kai/02.png') no-repeat; }
+
 .kai .slide-03 {
-	background: url('../assets/pages/kai/03.png') no-repeat;
-	}
-	.kai .slide-03 .more {
-		width: 82px;
-		height: 82px;
-		position: absolute;
-		top: 201px;
-		left: 101px;
-		cursor: pointer;
-		}
+	background: url('../assets/pages/kai/03.png') no-repeat; }
+
+.kai .more {
+	width: 82px;
+	height: 82px;
+	position: absolute;
+	top: 371px;
+	left: 70px;
+	cursor: pointer; }
 
 /**president **/
 .presedent .slide-01 {
@@ -1294,73 +1274,68 @@ top:574px;
 	}
 
 /** TIDA **/
-.tida {
-
-}
 .tida.slide-01 {
 	background: url('../assets/pages/tida/main.png') no-repeat;
-	color: #fff;
-	}
+	color: #fff; }
+
 .tida .bt-left a {
 	display: block;
 	height:102px;
-	width:311px;
-}
+	width:311px; }
+
 .projetsx {
 	background:  url('../assets/pages/tida/controls/projects.png') no-repeat;
 	position: absolute;
 	left:51px;
 	top:190px;
-	cursor: pointer;
-}
+	cursor: pointer; }
+
 .aboutx {
 	background:  url('../assets/pages/tida/controls/about.png') no-repeat;
-position: absolute;
+	position: absolute;
 	left:51px;
 	top:323px;
-	cursor: pointer;
-}
+	cursor: pointer; }
+
 .casansummitx {
 	background:  url('../assets/pages/tida/controls/kazansummit.png') no-repeat;
-position: absolute;
+	position: absolute;
 	left:51px;
 	top:454px;
-	cursor: pointer;
-}
-.tida .slide-02 {
-	background: url('../assets/pages/tida/01.jpg') no-repeat;
-}
-.tida .slide-03 {
-	background: url('../assets/pages/tida/02.jpg') no-repeat;
-}
-.tida .slide-04 {
-	background: url('../assets/pages/tida/03.jpg') no-repeat;
-}
-.tida .slide-05 {
-	background: url('../assets/pages/tida/04.jpg') no-repeat;
-}
-.tida .slide-06 {
-	background: url('../assets/pages/tida/05.jpg') no-repeat;
-}
-.tida .slide-07 {
-	background: url('../assets/pages/tida/06.jpg') no-repeat;
-}
-.tida .slide-08 {
-	background: url('../assets/pages/tida/07.jpg') no-repeat;
-}
-.tida .slide-09 {
-	background: url('../assets/pages/tida/08.jpg') no-repeat;
-}
-.tida .slide-10 {
-	background: url('../assets/pages/tida/09.jpg') no-repeat;
-}
-.tida .slide-11 {
-	background: url('../assets/pages/tida/10.jpg') no-repeat;
-}
-.tida .slide-12 {
-	background: url('../assets/pages/tida/11.jpg') no-repeat;
-}
+	cursor: pointer; }
 
+.tida .slide-02 {
+	background: url('../assets/pages/tida/01.jpg') no-repeat; }
+
+.tida .slide-03 {
+	background: url('../assets/pages/tida/02.jpg') no-repeat; }
+
+.tida .slide-04 {
+	background: url('../assets/pages/tida/03.jpg') no-repeat; }
+
+.tida .slide-05 {
+	background: url('../assets/pages/tida/04.jpg') no-repeat; }
+
+.tida .slide-06 {
+	background: url('../assets/pages/tida/05.jpg') no-repeat; }
+
+.tida .slide-07 {
+	background: url('../assets/pages/tida/06.jpg') no-repeat; }
+
+.tida .slide-08 {
+	background: url('../assets/pages/tida/07.jpg') no-repeat; }
+
+.tida .slide-09 {
+	background: url('../assets/pages/tida/08.jpg') no-repeat; }
+
+.tida .slide-10 {
+	background: url('../assets/pages/tida/09.jpg') no-repeat; }
+
+.tida .slide-11 {
+	background: url('../assets/pages/tida/10.jpg') no-repeat; }
+
+.tida .slide-12 {
+	background: url('../assets/pages/tida/11.jpg') no-repeat; }
 
 /** TIDA About **/
 
