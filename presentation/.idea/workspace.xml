@@ -61,7 +61,7 @@
       <file leaf-file-name="kazan-summit.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kazan-summit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="59" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.622248">
+            <state line="20" column="29" selection-start="698" selection-end="698" vertical-scroll-proportion="0.4052198">
               <folding />
             </state>
           </provider>
@@ -102,7 +102,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="1013" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -236,7 +236,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1013" extended-state="0" />
+    <frame x="0" y="22" width="1920" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -444,7 +444,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kazan-summit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="59" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.622248">
+        <state line="20" column="29" selection-start="698" selection-end="698" vertical-scroll-proportion="0.4052198">
           <folding />
         </state>
       </provider>
