@@ -266,7 +266,7 @@
 			}
 			// If we have a image set, display 'Image X of X'
 			if ( settings.imageArray.length > 1 ) {
-				$('#lightbox-image-details-currentNumber').html(settings.txtImage + ' ' + ( settings.activeImage + 1 ) + ' ' + settings.txtOf + ' ' + settings.imageArray.length).show();
+				$('#lightbox-image-details-currentNumber').html((settings.media == "videos" ? "Video" : settings.txtImage) + ' ' + ( settings.activeImage + 1 ) + ' ' + settings.txtOf + ' ' + settings.imageArray.length).show();
 			}
 		}
 		/**
