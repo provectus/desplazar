@@ -142,9 +142,12 @@ $(function() {
         buildMediaPath: function() {
             var path = [
                 this.options.basepath,
-                this.type,
-                this.subdir,
+                this.type
             ];
+
+            if(this.subdir) {
+                path.push(this.subdir);
+            }
 
             if(this.prefix) {
                 path.push(this.prefix);
