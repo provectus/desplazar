@@ -180,7 +180,7 @@ $(function() {
         $(this).find('.gallery-wrap').each(function(idx, item){
             if(idx) {
                 var offset = parseInt($(item).css('top'));
-                $(item).css({ top: offset * (idx+1) + 20});
+                $(item).css({ top: offset * (idx+1) + 50});
             }
         })
     });

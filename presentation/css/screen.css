@@ -254,7 +254,7 @@
 	top: 200px;
 	left: 242px;
 	width: 707px;
-	height: 496px;
+	max-height: 496px;
 	overflow: auto; }
 
 .gallery-wrap .gallery-item{
@@ -1031,13 +1031,12 @@ top:574px;
 		background: url('../assets/controls/home.png') no-repeat;
 		}
 	.kazan-helicopters .slide-02 .video-ico {
-		top: 584px;
-		left: 72px;
-		}
+		top: 530px;
+		left: 72px;	}
+
 	.kazan-helicopters .slide-02 .gallery-ico {
-		top: 242px;
-		left: 72px;
-		}
+		top: 280px;
+		left: 72px;	}
 
 /** KAMAZ **/
 /** 01 **/
