@@ -32,15 +32,17 @@
 	height: 768px;
 	overflow: hidden;
 	margin: 0 auto;
+	background: #000;
 	}
-
+#canvas {
+	background: #000;
+}
 #canvas, #canvas ul li {
     overflow: hidden;
     position: relative;
     width: 100%;
  /*   height: 690px !important; */
  height:768px;
-
 }
 
 #canvas ul, #canvas ul li ul {
@@ -106,13 +108,16 @@
     top: 550px;
     left: 360px;
 }
-
+#company-vision-gallery {
+	text-decoration: none;
+	color: #fff;
+	}
 #main .navigation div,
 #main2 .navigation div {
 	padding-left:0;
 	width:312px;
 	margin-bottom:25px;
-	display:list-style;
+	display: list-style;
 	position: relative;
 	top:auto;
 	bottom:auto;
@@ -408,6 +413,7 @@ width:950px;
 	right:60px;
 	background:url('../assets/controls/close-btn.png') no-repeat;
 	display: block;
+	z-index: 1000;
 	}
 
 .header-top {
@@ -816,6 +822,10 @@ a.home {
 		position: absolute;
 		font-size: 14px;
 		}
+	.ak-bars-aero .slide-01 .site {
+		color: #000;
+		text-decoration: none;
+		}
 		.ak-bars-aero .slide-01 .address p {
 			line-height: 16px;
 			}
@@ -836,6 +846,10 @@ a.home {
 	background: url('../assets/pages/ak-bars-aero/02.jpg') no-repeat;
 	color: #fff;
 	}
+	.ak-bars-aero .slide-02 .title {
+		color: #fff;
+		text-decoration: none;
+		}
 	.ak-bars-aero .slide-02 .m-header-01 {
 		top: 233px;
 		}
@@ -1069,6 +1083,15 @@ top:574px;
 .kamaz .slide-04 {
 	background: url('../assets/pages/kamaz/04.png') no-repeat;
 	}
+	.kamaz .slide-04 .invisible-home {
+		display: block;
+		position: absolute;
+		bottom: 34px;
+		right: 47px;
+		width: 37px;
+		height: 31px;
+		z-index: 5000;
+		}
 
 /** GORKY **/
 /** 01 **/
@@ -1155,6 +1178,15 @@ top:574px;
 		top: 233px;
 		left: 110px;
 		cursor: pointer;
+		}
+	.compress .slide-04 .invisible-home {
+		display: block;
+		position: absolute;
+		bottom: 34px;
+		right: 46px;
+		width: 37px;
+		height: 31px;
+		z-index: 5000;
 		}
 
 
