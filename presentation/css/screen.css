@@ -1068,19 +1068,33 @@ top:574px;
 	}
 	.kamaz .slide-03 .more-01 {
 		width: 82px;
-		height: 82px;
 		position: absolute;
 		top: 284px;
 		left: 69px;
 		cursor: pointer;
+        background: url('../assets/controls/gallery.png') no-repeat;
+        font-family: DINPro-Bold;
+        color: #fff;
+        font-size: 24px;
+        text-decoration: none;
+		height: 90px;
+        line-height: 90px;
+        padding-left: 100px;
 		}
 	.kamaz .slide-03 .more-02 {
 		width: 82px;
-		height: 82px;
 		position: absolute;
 		top: 420px;
 		left: 69px;
 		cursor: pointer;
+        background: url('../assets/controls/gallery.png') no-repeat;
+        font-family: DINPro-Bold;
+        color: #fff;
+        font-size: 24px;
+        text-decoration: none;
+		height: 90px;
+        line-height: 90px;
+        padding-left: 100px;
 		}
 .kamaz .slide-04 {
 	background: url('../assets/pages/kamaz/04.png') no-repeat;

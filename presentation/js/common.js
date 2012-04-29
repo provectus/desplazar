@@ -1,3 +1,9 @@
+DEBUG = false;
+
+console.log = function() {
+    if(DEBUG) console.log.apply(this, arguments);
+}
+
 $(function() {
 
     var bgImages = [ '01.jpg', '02.jpg', '03.jpg', '04.jpg', '05.jpg', '06.jpg' ];
@@ -145,7 +151,7 @@ $(function() {
                 this.type
             ];
 
-            if(this.subdir) {
+            if(this.subdir && this.subdir != 'index') {
                 path.push(this.subdir);
             }
 
