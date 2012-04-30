@@ -176,7 +176,7 @@ Desplazar.prototype = {
         var left = 0,
             top = 0;
 
-        if(this.options.direction == Desplazar.VERTICAL && this.base.getCurrent() == 0 && (!this.options.disabled || this.options.disabled != 'vertical')) {
+        if(this.options.direction == Desplazar.VERTICAL && this.base.getCurrent() == 0) {
             if(ev.direction == 'up') {
                 top = 0 - ev.distance;
             } else if(ev.direction == 'down') {

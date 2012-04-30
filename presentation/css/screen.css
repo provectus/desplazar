@@ -40,7 +40,7 @@ body {
 #canvas {
 	background: #000;
 }
-#canvas, #canvas ul li {
+#canvas, #canvas > ul > li {
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -48,7 +48,7 @@ body {
  height:768px;
 }
 
-#canvas ul, #canvas ul li ul {
+#canvas > ul, #canvas > ul > li > ul {
     position: absolute;
     z-index: 10;
     -webkit-transition: all .2s ease-out;
@@ -64,12 +64,12 @@ body {
     overflow: hidden;
 }
 
-#canvas ul {
+#canvas > ul {
     width: 1024px;
     height: 1000px;
 }
 
-#canvas ul li ul li {
+#canvas > ul > li > ul > li {
     float: left;
     width: 1024px !important;
     height: 768px !important;
@@ -158,7 +158,7 @@ body {
 			top: 173px;
 			left: 53px;
 			}
-		.enterprises .ak-bars-aero {
+		.enterprises .pestrchinka {
 			top: 173px;
 			left: 368px;
 			}
@@ -182,10 +182,10 @@ body {
 			top: 278px;
 			left: 53px;
 			}
-		.enterprises .pestrchinka {
+		/*.enterprises .pestrchinka {
 			top: 488px;
 			left: 368px;
-			}
+			}*/
 		.enterprises .gorky {
 			top: 383px;
 			left: 368px;
@@ -458,7 +458,7 @@ a.home {
 	background: url('../assets/controls/home.png') no-repeat;
 	}
 
-.text-body p {
+.text-body p, .text-body ul {
 	color:#000;
 	font-family: DINPro-Regular;
 	font-size: 18px;
@@ -633,7 +633,7 @@ a.home {
 	}
 	.alabuga .slide-02 table {
 		color: #000;
-		}
+	}
 	.alabuga .slide-02 .text-01 {
 		top: 180px;
 		}
@@ -646,6 +646,12 @@ a.home {
 	.alabuga .slide-02 .more-min {
 		top: 530px;
 		}
+    .alabuga .slide-03 ul {
+        color: #000;
+        list-style: circle;
+        padding: 5px;
+        margin-left: 40px;
+    }
 
 /** 03 **/
 .alabuga .slide-03 {
@@ -672,13 +678,18 @@ a.home {
 
 /** BKK **/
 /** 01 **/
+.bkk .title {
+    font-size: 32px;
+    font-weight: bold;
+}
 .bkk .slide-01 {
 	color: #000;
-	background: url('../assets/pages/bkk/01.png') no-repeat;
+	background: url('../assets/pages/bkk/1_01.png') no-repeat;
 	}
 	.bkk .slide-01 .title {
 		color: #000;
 		line-height: 50px;
+        text-transform: uppercase;
 		}
 	.bkk .slide-01 .address {
 		top: 580px;
@@ -700,13 +711,14 @@ a.home {
 		}
 .bkk .slide-02 {
 	color: #fff;
-	background: url('../assets/pages/bkk/02.png') no-repeat;
+	background: url('../assets/pages/bkk/1_02.png') no-repeat;
 	}
 	.bkk .slide-02 .more-min {
 		top: 565px;
 		}
 	.bkk .slide-02 .title {
 		letter-spacing: -2px;
+        text-transform: uppercase;
 		}
 	.bkk .slide-02 .text-01 {
 		top: 175px;
@@ -725,10 +737,11 @@ a.home {
 		}
 .bkk .slide-03 {
 	color: #fff;
-	background: url('../assets/pages/bkk/03.png') no-repeat;
+	background: url('../assets/pages/bkk/1_03.png') no-repeat;
 	}
 .bkk .slide-03 .title {
 	letter-spacing: -1px;
+        text-transform: uppercase;
 	}
 
 /** AK BARS HOLDING **/
