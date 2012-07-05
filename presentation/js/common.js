@@ -1,3 +1,4 @@
+
 DEBUG = false;
 
 console.log = function() {
@@ -48,7 +49,7 @@ $(function() {
     });
 
 
-	$('a[rel="lightbox[group1]"]').lightBox({
+	/*$('a[rel="lightbox[group1]"]').lightBox({
 		imageBtnPrev: 'assets/gallery/prev-min1.png',
 		imageBtnNext: 'assets/gallery/next-min1.png',
 		imageBtnClose: 'assets/gallery/close_min.png',
@@ -65,7 +66,7 @@ $(function() {
 		imageBtnNext: 'assets/gallery/next-min1.png',
 		imageBtnClose: 'assets/gallery/close_min.png',
 		imageLoading: 'assets/gallery/ajax-loader.gif'
-	});
+	});*/
 
 
     var Media = function(container, options) {
@@ -104,6 +105,8 @@ $(function() {
         this.drawGallery();
     };
 
+    var domainName = 'http://kazan.s3-website-us-east-1.amazonaws.com';
+
     Media.prototype = {
         getSettings: function(callback) {
             var path = [
@@ -113,9 +116,10 @@ $(function() {
             $.getJSON(path, callback);
         },
 
+
         drawGallery: function() {
             this.getSettings(function(settings) {
-                var group = 'lightbox[' + this.subdir + this.prefix + this.type + ']';
+                var group = this.subdir + this.prefix.replace(/\//gim,'') + this.type;  //fancybox не терпит / в атрибету rel
                 var path = this.buildMediaPath();
                 var cls = '';
                 for(var i = 1; i <= settings.count; ++i) {
@@ -125,17 +129,20 @@ $(function() {
                     }
 
                     this.container.append(
-                        $('<div>').attr({ class: 'gallery-item video ' + cls }).append(
+                        $('<div>').attr({ class: 'gallery-item ' + cls }).append(
                             $('<a>').attr({
-                                href: path + '/' + i + this.ext,
-                                rel: group
+                                href: domainName + path + '/' + i + this.ext,
+                                rel: group,
+                                class: 'fancybox iframe'
                             }).append(
                                 $('<img>').attr({
-                                    src: path + '/' + i + '_thumb' + '.jpg'
+                                    src: domainName + path + '/' + i + '_thumb' + '.jpg'
                                 })
                             )
                         )
                     );
+
+                    initFancyBox();
                 }
                 this.options.success.apply(this, [this.container]);
             }.bind(this));
@@ -177,13 +184,13 @@ $(function() {
 
                 if(this.type == 'link') return;
 
-                $(container).find('a').lightBox({
+                /*$(container).find('a').lightBox({
             		imageBtnPrev: 'assets/gallery/prev-min1.png',
             		imageBtnNext: 'assets/gallery/next-min1.png',
             		imageBtnClose: 'assets/gallery/close_min.png',
             		imageLoading: 'assets/gallery/ajax-loader.gif',
                     media: $(container).data('media')
-            	});
+            	});*/
             }
         });
     });
@@ -197,4 +204,22 @@ $(function() {
         })
     });
 
+    function initFancyBox(){
+        console.log('aapp')
+        $("a.iframe").fancybox({
+            'width': 747,   //1024
+            'height': 560,  //768
+            'autoScale': true,
+            'padding': 0,
+            'margin': 0,
+            'hideOnContentClick': true,
+            'transitionIn': 'none',
+            'transitionOut': 'none',
+            'showCloseButton': true,
+            'overlayOpacity': 1,
+            'overlayColor': '#000'
+        });
+    }
+
 });
+

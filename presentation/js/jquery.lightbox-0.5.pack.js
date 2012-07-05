@@ -491,3 +491,4 @@
 		return this.unbind('click').click(_initialize);
 	};
 })(jQuery); // Call and execute the function immediately passing the jQuery object
+console.log('lightbox inited');
