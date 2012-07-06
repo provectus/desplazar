@@ -1,5 +1,4 @@
 .DS_Store
 workspace.xml
-presentation/
 presentation/.idea/
-presentation/videos/
+presentation/public/videos/
