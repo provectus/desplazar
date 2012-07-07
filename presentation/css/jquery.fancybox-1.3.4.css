@@ -94,9 +94,11 @@
 }
 
 #fancybox-close {
-	position: absolute;
+	_position: absolute;
+	position: fixed;
 	bottom: 0px;
-	right: -105px;
+	_right: -105px;
+	right: 25px;
 	width: 52px;
 	height: 51px;
 	background: transparent url('../assets/gallery/close_min.png');
@@ -151,21 +153,23 @@
 }
 
 #fancybox-left-ico, #fancybox-right-ico {
-	position: absolute;
+	_position: absolute;
+	position: fixed;
 	top: 50%;
-	left: -9999px;
 	width: 52px;
 	height: 52px;
 	margin-top: -25px;
 	cursor: pointer;
 	z-index: 1102;
 	display: block;
-	left: -105px;
+	_left: -25px;
+	left: 25px;
 }
 
 #fancybox-right-ico{
 	left: auto;
-	right: -105px;
+	_right: -105px;
+	right: 25px;
 }
 
 #fancybox-left-ico {
