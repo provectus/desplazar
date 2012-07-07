@@ -119,7 +119,16 @@ $(function() {
 
         drawGallery: function() {
             this.getSettings(function(settings) {
-                var group = this.subdir + this.prefix.replace(/\//gim,'') + this.type;  //fancybox не терпит / в атрибету rel
+
+                var cleanFromSlashes;
+
+                if(typeof(this.prefix) == 'string'){
+                    cleanFromSlashes = this.prefix.replace(/\//gim,'')
+                }else{
+                    cleanFromSlashes = this.prefix;
+                }
+
+                var group = this.subdir + cleanFromSlashes + this.type; //fancybox doesn't support "/" and "[ ]" in rel
                 var path = this.buildMediaPath();
                 var cls = '';
                 for(var i = 1; i <= settings.count; ++i) {
@@ -129,7 +138,7 @@ $(function() {
                     }
 
                     this.container.append(
-                        $('<div>').attr({ class: 'gallery-item ' + cls }).append(
+                        $('<div>').attr({ class: 'gallery-item video ' + cls }).append(
                             $('<a>').attr({
                                 href: domainName + path + '/' + i + this.ext,
                                 rel: group,
